@@ -9,8 +9,9 @@
             <property value="1" name="auxiliary;index"/>
             <property-collection name="@http://www.mulesoft.org/schema/mule/magento/connection-pooling-profile;0">
                 <property value="WHEN_EXHAUSTED_GROW" name="exhaustedAction"/>
-                <property value="2" name="auxiliary;index"/>
+                <property value="true" name="isProcessed$$$$"/>
                 <property value="2" name="auxiliary;wrapIn"/>
+                <property value="2" name="auxiliary;index"/>
                 <property value="INITIALISE_ONE" name="initialisationPolicy"/>
             </property-collection>
         </properties>
@@ -20,18 +21,19 @@
             <property name="defaultEndpoint"/>
             <property name="connectionTimeout"/>
             <property value="${ns.username}" name="email"/>
-            <property name="auxiliary;metauseMetaData"/>
             <property value="Netsuite" name="name"/>
-            <property name="receiveTimeout"/>
+            <property name="auxiliary;metauseMetaData"/>
             <property value="${ns.account}" name="account"/>
+            <property name="receiveTimeout"/>
             <property value="${ns.password}" name="password"/>
-            <property name="endpoint"/>
             <property value="3" name="auxiliary;index"/>
+            <property name="endpoint"/>
             <property value="${ns.role}" name="roleId"/>
             <property-collection name="@http://www.mulesoft.org/schema/mule/netsuite/connection-pooling-profile;0">
                 <property value="WHEN_EXHAUSTED_GROW" name="exhaustedAction"/>
-                <property value="4" name="auxiliary;index"/>
+                <property value="true" name="isProcessed$$$$"/>
                 <property value="4" name="auxiliary;wrapIn"/>
+                <property value="4" name="auxiliary;index"/>
                 <property value="INITIALISE_ONE" name="initialisationPolicy"/>
             </property-collection>
         </properties>
@@ -39,17 +41,17 @@
     <global-element type="http://www.mulesoft.org/schema/mule/ee/data-mapper/config" name="DataMapper" entity-id="DataMapper#1">
         <properties>
             <property value="yes_grf" name="name"/>
-            <property value="5" name="auxiliary;index"/>
             <property value="yes.grf" name="transformationGraphPath"/>
+            <property value="5" name="auxiliary;index"/>
         </properties>
     </global-element>
-    <flow SubFlow="false" name="upload.customers" entity-id="b83a0201-6152-4760-bfb7-32ef9e84ed8c">
+    <flow SubFlow="false" name="upload.customers" entity-id="4237bea7-5ddc-4aab-8c03-562f4901684b">
         <properties>
             <property name="processingStrategy"/>
             <property name="processingStrategy2"/>
             <property name="bussinessEventsLabel"/>
-            <property name="tracking:enable-default-events"/>
             <property value="6" name="auxiliary;index"/>
+            <property name="tracking:enable-default-events"/>
         </properties>
         <lane isChoiceOtherwiseLane="false" index="0" hadOnlyOneElement="false" entity-id="compartment-lane#1">
             <graphicalData height="0" width="0" y="0" x="0"/>
@@ -68,17 +70,17 @@
                     <property value="request-response" name="exchange-pattern"/>
                     <property name="tracking:enable-default-events"/>
                     <property name="ref"/>
-                    <property name="transformer-refs"/>
                     <property name="httpLabel"/>
+                    <property name="transformer-refs"/>
                     <property name="address"/>
-                    <property value="mag-customers" name="path"/>
                     <property name="encoding"/>
+                    <property value="mag-customers" name="path"/>
                     <property name="responseTransformer-refs"/>
                     <property name="method"/>
                     <property name="user"/>
-                    <property name="responseTimeout"/>
-                    <property name="mimeType"/>
                     <property value="7" name="auxiliary;index"/>
+                    <property name="mimeType"/>
+                    <property name="responseTimeout"/>
                     <property name="connector-ref"/>
                 </properties>
             </endpoint>
@@ -89,30 +91,32 @@
                     <property name="username"/>
                     <property name="address"/>
                     <property value="http://www.mulesoft.org/schema/mule/magento/list-customers" name="org.mule.tooling.ui.modules.core.widgets.meta.ModeAttribute"/>
-                    <property name="password"/>
                     <property value="Magento" name="config-ref"/>
-                    <property name="filter"/>
+                    <property name="password"/>
                     <property value="8" name="auxiliary;index"/>
+                    <property name="filter"/>
                 </properties>
             </pattern>
             <pattern type="http://www.mulesoft.org/schema/mule/ee/data-mapper/data-mapper-connector" name="DataMapper" entity-id="DataMapper#2">
                 <graphicalData height="0" width="0" y="0" x="0"/>
                 <properties>
                     <property name="returnClass"/>
-                    <property name="stream"/>
                     <property name="input-ref"/>
+                    <property name="stream"/>
                     <property value="http://www.mulesoft.org/schema/mule/ee/data-mapper/transform" name="org.mule.tooling.ui.modules.core.widgets.meta.ModeAttribute"/>
-                    <property name="pipeSize"/>
                     <property value="yes_grf" name="config-ref"/>
+                    <property name="pipeSize"/>
                     <property value="9" name="auxiliary;index"/>
                     <property-collection name="@http://www.mulesoft.org/schema/mule/ee/data-mapper/input-arguments;0">
-                        <property value="10" name="auxiliary;index"/>
+                        <property value="true" name="isProcessed$$$$"/>
                         <property value="10" name="auxiliary;wrapIn"/>
+                        <property value="10" name="auxiliary;index"/>
                         <property-collection name="@http://www.mulesoft.org/schema/mule/ee/data-mapper/input-argument;1">
                             <property value="#[true]" name="value"/>
-                            <property value="isPerson" name="key"/>
-                            <property value="11" name="auxiliary;index"/>
+                            <property value="true" name="isProcessed$$$$"/>
                             <property value="11" name="auxiliary;wrapIn"/>
+                            <property value="11" name="auxiliary;index"/>
+                            <property value="isPerson" name="key"/>
                         </property-collection>
                     </property-collection>
                 </properties>
@@ -128,40 +132,120 @@
                 </properties>
                 <compartment entity-id="compartment#1">
                     <lane isChoiceOtherwiseLane="false" index="0" hadOnlyOneElement="false" entity-id="compartment-lane#2">
-                        <pattern type="http://www.mulesoft.org/schema/mule/netsuite/netsuite-connector" name="Netsuite" entity-id="Netsuite#2">
-                            <graphicalData height="0" width="0" y="0" x="0"/>
+                        <scope type="http://www.mulesoft.org/schema/mule/core/enricher" name="Message Enricher" entity-id="f9b02f92-a82f-49cf-bbba-1dabf5104def">
+                            <graphicalData height="114" width="141" y="104" x="640"/>
                             <properties>
-<property name=""/>
-<property name="connectionTimeout"/>
-<property name="email"/>
-<property value="http://www.mulesoft.org/schema/mule/netsuite/add-record-objects" name="org.mule.tooling.ui.modules.core.widgets.meta.ModeAttribute"/>
-<property name="receiveTimeout"/>
-<property name="account"/>
-<property value="CUSTOMER" name="recordType"/>
-<property name="password"/>
-<property value="Netsuite" name="config-ref"/>
-<property name="endpoint"/>
-<property value="13" name="auxiliary;index"/>
-<property name="roleId"/>
-<property-collection name="@http://www.mulesoft.org/schema/mule/netsuite/add-record-objects-recordss;0">
-    <property value="14" name="auxiliary;index"/>
-    <property value="14" name="auxiliary;wrapIn"/>
-    <property-collection name="@http://www.mulesoft.org/schema/mule/netsuite/add-record-objects-records;1">
-        <property value="" name="value"/>
-        <property value="#[payload]" name="value-ref"/>
-        <property value="15" name="auxiliary;index"/>
-        <property value="15" name="auxiliary;wrapIn"/>
-    </property-collection>
+<property value="" name="source"/>
+<property name="updated"/>
+<property value="variable:existingCustomer" name="target"/>
+                            </properties>
+                            <description></description>
+                            <compartment entity-id="7568db58-9be9-483d-bd86-98270a9ffef3">
+<lane isChoiceOtherwiseLane="false" index="0" hadOnlyOneElement="false" entity-id="ecb82d84-4fac-40d3-a3d0-f840b8dce9ef">
+    <pattern type="http://www.mulesoft.org/schema/mule/core/flow-ref" name="Flow Reference" entity-id="967244b3-d70d-45a6-9b24-4778c1ab4af8">
+        <graphicalData height="0" width="0" y="0" x="0"/>
+        <properties>
+            <property name="updated"/>
+            <property value="find.customer" name="name"/>
+        </properties>
+        <description></description>
+    </pattern>
+</lane>
+                            </compartment>
+                        </scope>
+                        <splitter index="0" type="org.mule.tooling.ui.modules.core.pattern.cbr" name="Choice" entity-id="1c59c928-d5b7-4cce-8381-fc9b03e86f99">
+                            <graphicalData height="201" width="374" y="61" x="841"/>
+                            <properties>
+<property name="updated"/>
+<property value="0" name=";INDEX"/>
+<property value="true" name="tracking:enable-default-events"/>
+<property-collection name="7698f5ab-ae2a-4657-8683-88e72ba35b04">
+    <property value="true" name="choice.otherwise"/>
+    <property value="" name="choice.expression"/>
+</property-collection>
+<property-collection name="2b6e5c14-1d2b-43d0-99e7-919d95a0ed0d">
+    <property value="#[payload != NullPayload]" name="choice.expression"/>
 </property-collection>
                             </properties>
-                        </pattern>
+                            <description></description>
+                            <pattern type="org.mule.tooling.ui.modules.core.pattern.cbr" name="Choice" entity-id="94a797bb-d711-41c1-b781-ed2fa0bfd7f6">
+<properties>
+    <property name="updated"/>
+    <property value="0" name=";INDEX"/>
+    <property value="true" name="tracking:enable-default-events"/>
+    <property-collection name="7698f5ab-ae2a-4657-8683-88e72ba35b04">
+        <property value="true" name="choice.otherwise"/>
+        <property value="" name="choice.expression"/>
+    </property-collection>
+    <property-collection name="2b6e5c14-1d2b-43d0-99e7-919d95a0ed0d">
+        <property value="#[payload != NullPayload]" name="choice.expression"/>
+    </property-collection>
+</properties>
+<description></description>
+                            </pattern>
+                            <compartment entity-id="3669b0fb-2953-4107-8040-37c6734edfdf">
+<lane isChoiceOtherwiseLane="true" index="0" hadOnlyOneElement="false" entity-id="7698f5ab-ae2a-4657-8683-88e72ba35b04">
+    <pattern type="http://www.mulesoft.org/schema/mule/core/logger" name="NEW" entity-id="c62135d4-a01e-43fb-9a86-dda215c8c240">
+        <graphicalData height="0" width="0" y="0" x="0"/>
+        <properties>
+            <property value="CREATE NEW CUSTOMER" name="message"/>
+            <property value="" name="category"/>
+            <property value="INFO" name="level"/>
+            <property name="updated"/>
+        </properties>
+        <description></description>
+    </pattern>
+    <pattern type="http://www.mulesoft.org/schema/mule/netsuite/netsuite-connector" name="Netsuite" entity-id="Netsuite#2">
+        <graphicalData height="67" width="68" y="173" x="869"/>
+        <properties>
+            <property name=""/>
+            <property name="connectionTimeout"/>
+            <property value="13" name="auxiliary;moved-from"/>
+            <property name="email"/>
+            <property value="http://www.mulesoft.org/schema/mule/netsuite/add-record-objects" name="org.mule.tooling.ui.modules.core.widgets.meta.ModeAttribute"/>
+            <property name="account"/>
+            <property name="receiveTimeout"/>
+            <property value="CUSTOMER" name="recordType"/>
+            <property value="Netsuite" name="config-ref"/>
+            <property name="password"/>
+            <property name="endpoint"/>
+            <property name="roleId"/>
+            <property-collection name="@http://www.mulesoft.org/schema/mule/netsuite/add-record-objects-recordss;0">
+                <property value="true" name="isProcessed$$$$"/>
+                <property value="14" name="auxiliary;wrapIn"/>
+                <property value="14" name="auxiliary;index"/>
+                <property-collection name="@http://www.mulesoft.org/schema/mule/netsuite/add-record-objects-records;1">
+                    <property value="" name="value"/>
+                    <property value="true" name="isProcessed$$$$"/>
+                    <property value="15" name="auxiliary;wrapIn"/>
+                    <property value="15" name="auxiliary;index"/>
+                    <property value="#[payload]" name="value-ref"/>
+                </property-collection>
+            </property-collection>
+        </properties>
+    </pattern>
+</lane>
+<lane isChoiceOtherwiseLane="false" index="0" hadOnlyOneElement="false" entity-id="2b6e5c14-1d2b-43d0-99e7-919d95a0ed0d">
+    <pattern type="http://www.mulesoft.org/schema/mule/core/logger" name="IGNORE" entity-id="128e835b-4074-41fb-bce5-f8db368d140b">
+        <graphicalData height="0" width="0" y="0" x="0"/>
+        <properties>
+            <property value="IGNORE - CUSTOMER EXISTS ALREADY" name="message"/>
+            <property value="" name="category"/>
+            <property value="INFO" name="level"/>
+            <property name="updated"/>
+        </properties>
+        <description></description>
+    </pattern>
+</lane>
+                            </compartment>
+                        </splitter>
                         <pattern type="http://www.mulesoft.org/schema/mule/core/logger" name="Logger" entity-id="Logger#1">
-                            <graphicalData height="0" width="0" y="0" x="0"/>
+                            <graphicalData height="67" width="68" y="128" x="1275"/>
                             <properties>
 <property value="DONE, DOING NEXT..." name="message"/>
 <property name="category"/>
 <property value="INFO" name="level"/>
-<property value="16" name="auxiliary;index"/>
+<property value="16" name="auxiliary;moved-from"/>
                             </properties>
                         </pattern>
                     </lane>
@@ -175,24 +259,24 @@
                     <property name="ignoreBadInput"/>
                     <property name="encoding"/>
                     <property name="mapper-ref"/>
-                    <property name="mimeType"/>
                     <property value="17" name="auxiliary;index"/>
+                    <property name="mimeType"/>
                 </properties>
             </pattern>
         </lane>
     </flow>
-    <flow SubFlow="false" name="find.customer" entity-id="56d1b1b8-a9aa-497d-9328-11217ae1716b">
+    <flow SubFlow="false" name="find.customer" entity-id="1828d767-139d-4fcb-a5d6-ba9f1b7c3f28">
         <properties>
             <property name="processingStrategy"/>
             <property name="processingStrategy2"/>
             <property name="bussinessEventsLabel"/>
-            <property name="tracking:enable-default-events"/>
             <property value="18" name="auxiliary;index"/>
+            <property name="tracking:enable-default-events"/>
         </properties>
         <lane isChoiceOtherwiseLane="false" index="0" hadOnlyOneElement="false" entity-id="compartment-lane#3">
             <graphicalData height="0" width="0" y="0" x="0"/>
             <endpoint message-exchange-pattern="RequestResponse" direction="Inbound" type="http://www.mulesoft.org/schema/mule/http/endpoint" name="HTTP" entity-id="HTTP#2">
-                <graphicalData height="0" width="0" y="0" x="0"/>
+                <graphicalData height="169" width="68" y="364" x="19"/>
                 <properties>
                     <property value="8081" name="port"/>
                     <property value="localhost" name="host"/>
@@ -206,49 +290,66 @@
                     <property value="request-response" name="exchange-pattern"/>
                     <property name="tracking:enable-default-events"/>
                     <property name="ref"/>
-                    <property name="transformer-refs"/>
                     <property name="httpLabel"/>
+                    <property name="transformer-refs"/>
                     <property name="address"/>
-                    <property value="mag-find-customer" name="path"/>
                     <property name="encoding"/>
+                    <property value="mag-find-customer" name="path"/>
                     <property name="responseTransformer-refs"/>
                     <property name="method"/>
                     <property name="user"/>
-                    <property name="responseTimeout"/>
-                    <property name="mimeType"/>
                     <property value="19" name="auxiliary;index"/>
+                    <property name="mimeType"/>
+                    <property name="responseTimeout"/>
                     <property name="connector-ref"/>
                 </properties>
             </endpoint>
             <pattern type="http://www.mulesoft.org/schema/mule/core/logger" name="Logger" entity-id="Logger#2">
-                <graphicalData height="0" width="0" y="0" x="0"/>
+                <graphicalData height="67" width="68" y="364" x="147"/>
                 <properties>
-                    <property value="EMAIL IS #[groovy:message.getInboundProperty('email')]" name="message"/>
-                    <property name="category"/>
+                    <property value="EMAIL TO FIND IS :  IS #[payload.email]" name="message"/>
+                    <property value="" name="category"/>
                     <property value="INFO" name="level"/>
+                    <property name="updated"/>
                     <property value="20" name="auxiliary;index"/>
                 </properties>
+                <description></description>
             </pattern>
             <pattern type="http://www.mulesoft.org/schema/mule/netsuite/netsuite-connector" name="Netsuite - Find Customer" entity-id="Netsuite#3">
-                <graphicalData height="0" width="0" y="0" x="0"/>
+                <graphicalData height="67" width="150" y="364" x="275"/>
                 <properties>
-                    <property value="email, 'is', 'tom'" name="expression"/>
-                    <property name=""/>
+                    <property value="is(email,'#[payload.email]')" name="expression"/>
+                    <property value="" name=""/>
+                    <property value="true" name="auxiliary;erased;pageSize"/>
                     <property value="http://www.mulesoft.org/schema/mule/netsuite/find-records" name="org.mule.tooling.ui.modules.core.widgets.meta.ModeAttribute"/>
-                    <property name="pageSize"/>
-                    <property name="receiveTimeout"/>
-                    <property name="returnSearchColumns"/>
-                    <property name="password"/>
-                    <property name="endpoint"/>
-                    <property name="bodyFieldsOnly"/>
-                    <property name="connectionTimeout"/>
-                    <property name="email"/>
-                    <property name="account"/>
+                    <property value="" name="pageSize"/>
+                    <property value="" name="receiveTimeout"/>
+                    <property value="true" name="returnSearchColumns"/>
+                    <property value="" name="password"/>
+                    <property value="" name="endpoint"/>
+                    <property value="true" name="bodyFieldsOnly"/>
+                    <property value="true" name="auxiliary;erased;receiveTimeout"/>
+                    <property value="" name="connectionTimeout"/>
+                    <property name="updated"/>
+                    <property value="" name="email"/>
+                    <property value="" name="account"/>
+                    <property value="true" name="auxiliary;erased;connectionTimeout"/>
                     <property value="CUSTOMER" name="recordType"/>
                     <property value="Netsuite" name="config-ref"/>
                     <property value="21" name="auxiliary;index"/>
-                    <property name="roleId"/>
+                    <property value="" name="roleId"/>
                 </properties>
+                <description></description>
+            </pattern>
+            <pattern type="http://www.mulesoft.org/schema/mule/core/logger" name="Logger" entity-id="c29c589d-d48a-4c35-8262-ceec91418ee8">
+                <graphicalData height="0" width="0" y="0" x="0"/>
+                <properties>
+                    <property value="RESPONSE FROM FIND : #[payload]" name="message"/>
+                    <property value="" name="category"/>
+                    <property value="INFO" name="level"/>
+                    <property name="updated"/>
+                </properties>
+                <description></description>
             </pattern>
         </lane>
     </flow>

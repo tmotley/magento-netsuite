@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<mule xmlns:data-mapper="http://www.mulesoft.org/schema/mule/ee/data-mapper" xmlns:json="http://www.mulesoft.org/schema/mule/json" xmlns:magento="http://www.mulesoft.org/schema/mule/magento" xmlns:netsuite="http://www.mulesoft.org/schema/mule/netsuite" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:spring="http://www.springframework.org/schema/beans" version="EE-3.4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+<mule xmlns:tracking="http://www.mulesoft.org/schema/mule/ee/tracking" xmlns:data-mapper="http://www.mulesoft.org/schema/mule/ee/data-mapper" xmlns:json="http://www.mulesoft.org/schema/mule/json" xmlns:magento="http://www.mulesoft.org/schema/mule/magento" xmlns:netsuite="http://www.mulesoft.org/schema/mule/netsuite" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:spring="http://www.springframework.org/schema/beans" version="EE-3.4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
 http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
 http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
 http://www.mulesoft.org/schema/mule/magento http://www.mulesoft.org/schema/mule/magento/1.1/mule-magento.xsd
 http://www.mulesoft.org/schema/mule/netsuite http://www.mulesoft.org/schema/mule/netsuite/3.0/mule-netsuite.xsd
 http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/json/current/mule-json.xsd
-http://www.mulesoft.org/schema/mule/ee/data-mapper http://www.mulesoft.org/schema/mule/ee/data-mapper/current/mule-data-mapper.xsd">
+http://www.mulesoft.org/schema/mule/ee/data-mapper http://www.mulesoft.org/schema/mule/ee/data-mapper/current/mule-data-mapper.xsd
+http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd">
 	<magento:config name="Magento" username="mule" password="123456" address="http://localhost:8888/magento/index.php/api/V2_soap/index/" doc:name="Magento">
         <magento:connection-pooling-profile initialisationPolicy="INITIALISE_ONE" exhaustedAction="WHEN_EXHAUSTED_GROW"/>
     </magento:config>
@@ -23,18 +24,30 @@ http://www.mulesoft.org/schema/mule/ee/data-mapper http://www.mulesoft.org/schem
             </data-mapper:input-arguments>
         </data-mapper:transform>
         <foreach doc:name="For Each">
-            <netsuite:add-record-objects config-ref="Netsuite" recordType="CUSTOMER" doc:name="Netsuite">
-                <netsuite:records>
-                    <netsuite:record value-ref="#[payload]"/>
-                </netsuite:records>
-            </netsuite:add-record-objects>
+            <enricher target="variable:existingCustomer" doc:name="Message Enricher">
+                <flow-ref name="find.customer" doc:name="Flow Reference"/>
+            </enricher>
+            <choice tracking:enable-default-events="true" doc:name="Choice">
+                <when expression="#[payload != NullPayload]">
+                    <logger message="IGNORE - CUSTOMER EXISTS ALREADY" level="INFO" doc:name="IGNORE"/>
+                </when>
+                <otherwise>
+                    <logger message="CREATE NEW CUSTOMER" level="INFO" doc:name="NEW"/>
+                    <netsuite:add-record-objects config-ref="Netsuite" recordType="CUSTOMER" doc:name="Netsuite">
+                        <netsuite:records>
+                            <netsuite:record value-ref="#[payload]"/>
+                        </netsuite:records>
+                    </netsuite:add-record-objects>
+                </otherwise>
+            </choice>
             <logger message="DONE, DOING NEXT..." level="INFO" doc:name="Logger"/>
         </foreach>
         <json:object-to-json-transformer doc:name="Object to JSON"/>
     </flow>
     <flow name="find.customer" doc:name="find.customer">
         <http:inbound-endpoint exchange-pattern="request-response" host="localhost" port="8081" path="mag-find-customer" doc:name="HTTP"/>
-        <logger message="EMAIL IS #[groovy:message.getInboundProperty('email')]" level="INFO" doc:name="Logger"/>
-        <netsuite:find-records config-ref="Netsuite" recordType="CUSTOMER" expression="email, 'is', 'tom'" doc:name="Netsuite - Find Customer"/>
+        <logger message="EMAIL TO FIND IS :  IS #[payload.email]" level="INFO" doc:name="Logger"/>
+        <netsuite:find-records config-ref="Netsuite" recordType="CUSTOMER" expression="is(email,'#[payload.email]')" doc:name="Netsuite - Find Customer"/>
+        <logger message="RESPONSE FROM FIND : #[payload]" level="INFO" doc:name="Logger"/>
     </flow>
 </mule>
