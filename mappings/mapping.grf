@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Graph author="tom" created="Tue Jul 16 16:46:22 PDT 2013" guiVersion="3.3.2" id="1374082920769" licenseCode="CLPXDMULES37812333BY" licenseType="Commercial" modified="Tue Jul 16 16:46:22 PDT 2013" modifiedBy="tom" name="mapping_grf" revision="1.0" showComponentDetails="false">
+<Global>
+<Metadata __sourcePath="{}/list" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _type="Input" id="02643401-da54-4323-8def-15f13e5d97da">
+<Record fieldDelimiter="|" name="list" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __sourcePath="{}/list/confirmation" containerType="SINGLE" label="confirmation" name="confirmation" type="boolean"/>
+<Field __sourcePath="{}/list/created_at" containerType="SINGLE" label="created_at" name="created_at" type="string"/>
+<Field __sourcePath="{}/list/created_in" containerType="SINGLE" label="created_in" name="created_in" type="string"/>
+<Field __sourcePath="{}/list/customer_id" containerType="SINGLE" label="customer_id" name="customer_id" type="integer"/>
+<Field __sourcePath="{}/list/dob" containerType="SINGLE" label="dob" name="dob" type="string"/>
+<Field __sourcePath="{}/list/email" containerType="SINGLE" label="email" name="email" type="string"/>
+<Field __sourcePath="{}/list/firstname" containerType="SINGLE" label="firstname" name="firstname" type="string"/>
+<Field __sourcePath="{}/list/group_id" containerType="SINGLE" label="group_id" name="group_id" type="integer"/>
+<Field __sourcePath="{}/list/increment_id" containerType="SINGLE" label="increment_id" name="increment_id" type="string"/>
+<Field __sourcePath="{}/list/lastname" containerType="SINGLE" label="lastname" name="lastname" type="string"/>
+<Field __sourcePath="{}/list/middlename" containerType="SINGLE" label="middlename" name="middlename" type="string"/>
+<Field __sourcePath="{}/list/password_hash" containerType="SINGLE" label="password_hash" name="password_hash" type="string"/>
+<Field __sourcePath="{}/list/prefix" containerType="SINGLE" label="prefix" name="prefix" type="string"/>
+<Field __sourcePath="{}/list/store_id" containerType="SINGLE" label="store_id" name="store_id" type="integer"/>
+<Field __sourcePath="{}/list/suffix" containerType="SINGLE" label="suffix" name="suffix" type="string"/>
+<Field __sourcePath="{}/list/taxvat" containerType="SINGLE" label="taxvat" name="taxvat" type="string"/>
+<Field __sourcePath="{}/list/updated_at" containerType="SINGLE" label="updated_at" name="updated_at" type="string"/>
+<Field __sourcePath="{}/list/website_id" containerType="SINGLE" label="website_id" name="website_id" type="integer"/>
+</Record>
+</Metadata>
+<Metadata __sourcePath="{}/list" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _type="Output" id="99a8e465-09fc-4707-9ad4-41e7cc0a3fe0">
+<Record fieldDelimiter="|" name="list" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __sourcePath="{}/list/confirmation" containerType="SINGLE" label="confirmation" name="confirmation" type="boolean"/>
+<Field __sourcePath="{}/list/created_at" containerType="SINGLE" label="created_at" name="created_at" type="string"/>
+<Field __sourcePath="{}/list/created_in" containerType="SINGLE" label="created_in" name="created_in" type="string"/>
+<Field __sourcePath="{}/list/customer_id" containerType="SINGLE" label="customer_id" name="customer_id" type="integer"/>
+<Field __sourcePath="{}/list/dob" containerType="SINGLE" label="dob" name="dob" type="string"/>
+<Field __sourcePath="{}/list/email" containerType="SINGLE" label="email" name="email" type="string"/>
+<Field __sourcePath="{}/list/firstname" containerType="SINGLE" label="firstname" name="firstname" type="string"/>
+<Field __sourcePath="{}/list/group_id" containerType="SINGLE" label="group_id" name="group_id" type="integer"/>
+<Field __sourcePath="{}/list/increment_id" containerType="SINGLE" label="increment_id" name="increment_id" type="string"/>
+<Field __sourcePath="{}/list/lastname" containerType="SINGLE" label="lastname" name="lastname" type="string"/>
+<Field __sourcePath="{}/list/middlename" containerType="SINGLE" label="middlename" name="middlename" type="string"/>
+<Field __sourcePath="{}/list/password_hash" containerType="SINGLE" label="password_hash" name="password_hash" type="string"/>
+<Field __sourcePath="{}/list/prefix" containerType="SINGLE" label="prefix" name="prefix" type="string"/>
+<Field __sourcePath="{}/list/store_id" containerType="SINGLE" label="store_id" name="store_id" type="integer"/>
+<Field __sourcePath="{}/list/suffix" containerType="SINGLE" label="suffix" name="suffix" type="string"/>
+<Field __sourcePath="{}/list/taxvat" containerType="SINGLE" label="taxvat" name="taxvat" type="string"/>
+<Field __sourcePath="{}/list/updated_at" containerType="SINGLE" label="updated_at" name="updated_at" type="string"/>
+<Field __sourcePath="{}/list/website_id" containerType="SINGLE" label="website_id" name="website_id" type="integer"/>
+</Record>
+</Metadata>
+<Dictionary>
+<Entry id="DictionaryEntry0" input="true" name="inputPayload" output="false" type="object"/>
+<Entry id="DictionaryEntry1" input="false" name="outputPayload" output="true" type="object"/>
+</Dictionary>
+</Global>
+<Phase number="0">
+<Node enabled="enabled" fileURL="dict:inputPayload" guiHeight="0" guiName="Pojo READER" guiWidth="0" guiX="20" guiY="20" id="BEAN_READER0" type="BEAN_READER">
+<attr name="mapping"><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Context outPort="0" sequenceField="__id" xpath=".">
+  <Mapping cloverField="confirmation" trim="true" xpath="confirmation"/>
+  <Mapping cloverField="created_at" trim="true" xpath="created_at"/>
+  <Mapping cloverField="created_in" trim="true" xpath="created_in"/>
+  <Mapping cloverField="customer_id" trim="true" xpath="customer_id"/>
+  <Mapping cloverField="dob" trim="true" xpath="dob"/>
+  <Mapping cloverField="email" trim="true" xpath="email"/>
+  <Mapping cloverField="firstname" trim="true" xpath="firstname"/>
+  <Mapping cloverField="group_id" trim="true" xpath="group_id"/>
+  <Mapping cloverField="increment_id" trim="true" xpath="increment_id"/>
+  <Mapping cloverField="lastname" trim="true" xpath="lastname"/>
+  <Mapping cloverField="middlename" trim="true" xpath="middlename"/>
+  <Mapping cloverField="password_hash" trim="true" xpath="password_hash"/>
+  <Mapping cloverField="prefix" trim="true" xpath="prefix"/>
+  <Mapping cloverField="store_id" trim="true" xpath="store_id"/>
+  <Mapping cloverField="suffix" trim="true" xpath="suffix"/>
+  <Mapping cloverField="taxvat" trim="true" xpath="taxvat"/>
+  <Mapping cloverField="updated_at" trim="true" xpath="updated_at"/>
+  <Mapping cloverField="website_id" trim="true" xpath="website_id"/>
+</Context>
+]]></attr>
+<attr name="__typeName"><![CDATA[__default__]]></attr>
+<attr name="_data_format"><![CDATA[JAVA]]></attr>
+<attr name="schema"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<schema-object>
+  <schema-collection>
+    <typed-object-ref type-ref="com.magento.api.CustomerCustomerEntity"/>
+  </schema-collection>
+  <typed-object type="java.lang.Boolean"/>
+  <typed-object type="java.lang.Integer"/>
+  <typed-object type="java.lang.String"/>
+  <typed-object type="com.magento.api.CustomerCustomerEntity">
+    <typed-object-ref name="confirmation" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="created_at" type-ref="java.lang.String"/>
+    <typed-object-ref name="created_in" type-ref="java.lang.String"/>
+    <typed-object-ref name="customer_id" type-ref="java.lang.Integer"/>
+    <typed-object-ref name="dob" type-ref="java.lang.String"/>
+    <typed-object-ref name="email" type-ref="java.lang.String"/>
+    <typed-object-ref name="firstname" type-ref="java.lang.String"/>
+    <typed-object-ref name="group_id" type-ref="java.lang.Integer"/>
+    <typed-object-ref name="increment_id" type-ref="java.lang.String"/>
+    <typed-object-ref name="lastname" type-ref="java.lang.String"/>
+    <typed-object-ref name="middlename" type-ref="java.lang.String"/>
+    <typed-object-ref name="password_hash" type-ref="java.lang.String"/>
+    <typed-object-ref name="prefix" type-ref="java.lang.String"/>
+    <typed-object-ref name="store_id" type-ref="java.lang.Integer"/>
+    <typed-object-ref name="suffix" type-ref="java.lang.String"/>
+    <typed-object-ref name="taxvat" type-ref="java.lang.String"/>
+    <typed-object-ref name="updated_at" type-ref="java.lang.String"/>
+    <typed-object-ref name="website_id" type-ref="java.lang.Integer"/>
+  </typed-object>
+</schema-object>
+]]></attr>
+<attr name="__operationName"><![CDATA[http://www.mulesoft.org/schema/mule/magento/list-customers]]></attr>
+<attr name="__connectorName"><![CDATA[Magento]]></attr>
+</Node>
+<Node charset="UTF-8" enabled="enabled" fileURL="dict:outputPayload" guiHeight="0" guiName="JSON WRITER" guiWidth="0" guiX="900" guiY="20" id="JSON_WRITER0" type="JSON_WRITER">
+<attr name="mapping"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<clover:collection clover:name="list" xmlns:clover="http://www.cloveretl.com/ns/xmlmapping">
+  <item clover:inPort="0">
+    <confirmation>$0.confirmation</confirmation>
+    <clover:element clover:name="created_at">$0.created_at</clover:element>
+    <clover:element clover:name="created_in">$0.created_in</clover:element>
+    <clover:element clover:name="customer_id">$0.customer_id</clover:element>
+    <dob>$0.dob</dob>
+    <email>$0.email</email>
+    <firstname>$0.firstname</firstname>
+    <clover:element clover:name="group_id">$0.group_id</clover:element>
+    <clover:element clover:name="increment_id">$0.increment_id</clover:element>
+    <lastname>$0.lastname</lastname>
+    <middlename>$0.middlename</middlename>
+    <clover:element clover:name="password_hash">$0.password_hash</clover:element>
+    <prefix>$0.prefix</prefix>
+    <clover:element clover:name="store_id">$0.store_id</clover:element>
+    <suffix>$0.suffix</suffix>
+    <taxvat>$0.taxvat</taxvat>
+    <clover:element clover:name="updated_at">$0.updated_at</clover:element>
+    <clover:element clover:name="website_id">$0.website_id</clover:element>
+  </item>
+</clover:collection>]]></attr>
+<attr name="_data_format"><![CDATA[JSON]]></attr>
+</Node>
+<Node enabled="enabled" guiHeight="0" guiName="Foreach 'list' -&gt; 'list'" guiWidth="0" guiX="460" guiY="20" id="REFORMAT0" transformClass="com.mulesoft.datamapper.transform.MelRecordTransform" type="REFORMAT">
+<attr name="melScript"><![CDATA[//MEL
+//START -> DO NOT REMOVE
+output.__id = input.__id;
+//END -> DO NOT REMOVE
+output.confirmation = input.confirmation;
+output.created_at = input.created_at;
+output.created_in = input.created_in;
+output.customer_id = input.customer_id;
+output.dob = input.dob;
+output.email = input.email;
+output.firstname = input.firstname;
+output.group_id = input.group_id;
+output.increment_id = input.increment_id;
+output.lastname = input.lastname;
+output.middlename = input.middlename;
+output.password_hash = input.password_hash;
+output.prefix = input.prefix;
+output.store_id = input.store_id;
+output.suffix = input.suffix;
+output.taxvat = input.taxvat;
+output.updated_at = input.updated_at;
+output.website_id = input.website_id;
+]]></attr>
+</Node>
+<Edge debugMode="true" fromNode="BEAN_READER0:0" guiBendpoints="" id="Edge0" inPort="Port 0 (in)" metadata="02643401-da54-4323-8def-15f13e5d97da" outPort="Port 0 (out)" toNode="REFORMAT0:0"/>
+<Edge debugMode="true" fromNode="REFORMAT0:0" guiBendpoints="" id="Edge1" inPort="Port 0 (in)" metadata="99a8e465-09fc-4707-9ad4-41e7cc0a3fe0" outPort="Port 0 (out)" toNode="JSON_WRITER0:0"/>
+</Phase>
+</Graph>

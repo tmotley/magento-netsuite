@@ -1,0 +1,1039 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Graph author="tom" created="Tue Jul 16 16:46:22 PDT 2013" guiVersion="3.3.2" id="1374103760338" licenseCode="CLPXDMULES37812333BY" licenseType="Commercial" modified="Tue Jul 16 16:46:22 PDT 2013" modifiedBy="tom" name="yes_grf" revision="1.0" showComponentDetails="false">
+<Global>
+<Metadata __sourcePath="{}/list/addressbookList/addressbook" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="a04ca577-da10-476c-9f0a-73c8580b2fc6" _parent_id="__parent_id" _type="Output" id="03ecec28-45dc-487f-b24f-772b937b860b">
+<Record fieldDelimiter="|" name="addressbook" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __sourcePath="{}/list/addressbookList/addressbook/addr1" containerType="SINGLE" label="addr1" name="addr1" type="string"/>
+<Field __sourcePath="{}/list/addressbookList/addressbook/addr2" containerType="SINGLE" label="addr2" name="addr2" type="string"/>
+<Field __sourcePath="{}/list/addressbookList/addressbook/addr3" containerType="SINGLE" label="addr3" name="addr3" type="string"/>
+<Field __sourcePath="{}/list/addressbookList/addressbook/addrText" containerType="SINGLE" label="addrText" name="addrText" type="string"/>
+<Field __sourcePath="{}/list/addressbookList/addressbook/addressee" containerType="SINGLE" label="addressee" name="addressee" type="string"/>
+<Field __sourcePath="{}/list/addressbookList/addressbook/attention" containerType="SINGLE" label="attention" name="attention" type="string"/>
+<Field __sourcePath="{}/list/addressbookList/addressbook/city" containerType="SINGLE" label="city" name="city" type="string"/>
+<Field __sourcePath="{}/list/addressbookList/addressbook/country" containerType="SINGLE" label="country" name="country" type="string"/>
+<Field __sourcePath="{}/list/addressbookList/addressbook/defaultBilling" containerType="SINGLE" label="defaultBilling" name="defaultBilling" type="boolean"/>
+<Field __sourcePath="{}/list/addressbookList/addressbook/defaultShipping" containerType="SINGLE" label="defaultShipping" name="defaultShipping" type="boolean"/>
+<Field __sourcePath="{}/list/addressbookList/addressbook/internalId" containerType="SINGLE" label="internalId" name="internalId" type="string"/>
+<Field __sourcePath="{}/list/addressbookList/addressbook/isResidential" containerType="SINGLE" label="isResidential" name="isResidential" type="boolean"/>
+<Field __sourcePath="{}/list/addressbookList/addressbook/label" containerType="SINGLE" label="label" name="label" type="string"/>
+<Field __sourcePath="{}/list/addressbookList/addressbook/override" containerType="SINGLE" label="override" name="override" type="boolean"/>
+<Field __sourcePath="{}/list/addressbookList/addressbook/phone" containerType="SINGLE" label="phone" name="phone" type="string"/>
+<Field __sourcePath="{}/list/addressbookList/addressbook/state" containerType="SINGLE" label="state" name="state" type="string"/>
+<Field __sourcePath="{}/list/addressbookList/addressbook/zip" containerType="SINGLE" label="zip" name="zip" type="string"/>
+</Record>
+</Metadata>
+<Metadata __sourcePath="{}/list/contactRolesList/contactRoles" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="a04ca577-da10-476c-9f0a-73c8580b2fc6" _parent_id="__parent_id" _type="Output" id="96678a75-c6ae-4daa-a6c0-d54bfe6a837c">
+<Record fieldDelimiter="|" name="contactRoles" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __sourcePath="{}/list/contactRolesList/contactRoles/contact/externalId" containerType="SINGLE" label="externalId" name="externalId" type="string"/>
+<Field __sourcePath="{}/list/contactRolesList/contactRoles/contact/internalId" containerType="SINGLE" label="internalId" name="internalId" type="string"/>
+<Field __sourcePath="{}/list/contactRolesList/contactRoles/contact/name" containerType="SINGLE" label="name" name="name" type="string"/>
+<Field __sourcePath="{}/list/contactRolesList/contactRoles/contact/type" containerType="SINGLE" label="type" name="type" type="string"/>
+<Field __sourcePath="{}/list/contactRolesList/contactRoles/email" containerType="SINGLE" label="email" name="email" type="string"/>
+<Field __sourcePath="{}/list/contactRolesList/contactRoles/giveAccess" containerType="SINGLE" label="giveAccess" name="giveAccess" type="boolean"/>
+<Field __sourcePath="{}/list/contactRolesList/contactRoles/password" containerType="SINGLE" label="password" name="password" type="string"/>
+<Field __sourcePath="{}/list/contactRolesList/contactRoles/password2" containerType="SINGLE" label="password2" name="password2" type="string"/>
+<Field __sourcePath="{}/list/contactRolesList/contactRoles/role/externalId" containerType="SINGLE" label="externalId" name="externalId_1" type="string"/>
+<Field __sourcePath="{}/list/contactRolesList/contactRoles/role/internalId" containerType="SINGLE" label="internalId" name="internalId_1" type="string"/>
+<Field __sourcePath="{}/list/contactRolesList/contactRoles/role/name" containerType="SINGLE" label="name" name="name_1" type="string"/>
+<Field __sourcePath="{}/list/contactRolesList/contactRoles/role/type" containerType="SINGLE" label="type" name="type_1" type="string"/>
+<Field __sourcePath="{}/list/contactRolesList/contactRoles/sendEmail" containerType="SINGLE" label="sendEmail" name="sendEmail" type="boolean"/>
+</Record>
+</Metadata>
+<Metadata __sourcePath="{}/list/creditCardsList/creditCards" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="a04ca577-da10-476c-9f0a-73c8580b2fc6" _parent_id="__parent_id" _type="Output" id="4454a7f4-3efb-4796-b5a1-f28c16b4644b">
+<Record fieldDelimiter="|" name="creditCards" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __sourcePath="{}/list/creditCardsList/creditCards/ccDefault" containerType="SINGLE" label="ccDefault" name="ccDefault" type="boolean"/>
+<Field __dmType="Calendar" __sourcePath="{}/list/creditCardsList/creditCards/ccExpireDate" containerType="SINGLE" label="ccExpireDate" name="ccExpireDate" type="string"/>
+<Field __sourcePath="{}/list/creditCardsList/creditCards/ccMemo" containerType="SINGLE" label="ccMemo" name="ccMemo" type="string"/>
+<Field __sourcePath="{}/list/creditCardsList/creditCards/ccName" containerType="SINGLE" label="ccName" name="ccName" type="string"/>
+<Field __sourcePath="{}/list/creditCardsList/creditCards/ccNumber" containerType="SINGLE" label="ccNumber" name="ccNumber" type="string"/>
+<Field __sourcePath="{}/list/creditCardsList/creditCards/debitcardIssueNo" containerType="SINGLE" label="debitcardIssueNo" name="debitcardIssueNo" type="string"/>
+<Field __sourcePath="{}/list/creditCardsList/creditCards/internalId" containerType="SINGLE" label="internalId" name="internalId" type="string"/>
+<Field __sourcePath="{}/list/creditCardsList/creditCards/paymentMethod/externalId" containerType="SINGLE" label="externalId" name="externalId" type="string"/>
+<Field __sourcePath="{}/list/creditCardsList/creditCards/paymentMethod/internalId" containerType="SINGLE" label="internalId" name="internalId_1" type="string"/>
+<Field __sourcePath="{}/list/creditCardsList/creditCards/paymentMethod/name" containerType="SINGLE" label="name" name="name" type="string"/>
+<Field __sourcePath="{}/list/creditCardsList/creditCards/paymentMethod/type" containerType="SINGLE" label="type" name="type" type="string"/>
+<Field __dmType="Calendar" __sourcePath="{}/list/creditCardsList/creditCards/validfrom" containerType="SINGLE" label="validfrom" name="validfrom" type="string"/>
+</Record>
+</Metadata>
+<Metadata __sourcePath="{}/list/currencyList/currency" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="a04ca577-da10-476c-9f0a-73c8580b2fc6" _parent_id="__parent_id" _type="Output" id="4c1661e1-967e-4a3e-bbfa-a3fd415a0110">
+<Record fieldDelimiter="|" name="currency" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __sourcePath="{}/list/currencyList/currency/balance" containerType="SINGLE" label="balance" name="balance" type="number"/>
+<Field __sourcePath="{}/list/currencyList/currency/consolBalance" containerType="SINGLE" label="consolBalance" name="consolBalance" type="number"/>
+<Field __sourcePath="{}/list/currencyList/currency/consolDepositBalance" containerType="SINGLE" label="consolDepositBalance" name="consolDepositBalance" type="number"/>
+<Field __sourcePath="{}/list/currencyList/currency/consolOverdueBalance" containerType="SINGLE" label="consolOverdueBalance" name="consolOverdueBalance" type="number"/>
+<Field __sourcePath="{}/list/currencyList/currency/consolUnbilledOrders" containerType="SINGLE" label="consolUnbilledOrders" name="consolUnbilledOrders" type="number"/>
+<Field __sourcePath="{}/list/currencyList/currency/currency/externalId" containerType="SINGLE" label="externalId" name="externalId" type="string"/>
+<Field __sourcePath="{}/list/currencyList/currency/currency/internalId" containerType="SINGLE" label="internalId" name="internalId" type="string"/>
+<Field __sourcePath="{}/list/currencyList/currency/currency/name" containerType="SINGLE" label="name" name="name" type="string"/>
+<Field __sourcePath="{}/list/currencyList/currency/currency/type" containerType="SINGLE" label="type" name="type" type="string"/>
+<Field __sourcePath="{}/list/currencyList/currency/depositBalance" containerType="SINGLE" label="depositBalance" name="depositBalance" type="number"/>
+<Field __sourcePath="{}/list/currencyList/currency/displaySymbol" containerType="SINGLE" label="displaySymbol" name="displaySymbol" type="string"/>
+<Field __sourcePath="{}/list/currencyList/currency/overdueBalance" containerType="SINGLE" label="overdueBalance" name="overdueBalance" type="number"/>
+<Field __sourcePath="{}/list/currencyList/currency/overrideCurrencyFormat" containerType="SINGLE" label="overrideCurrencyFormat" name="overrideCurrencyFormat" type="boolean"/>
+<Field __sourcePath="{}/list/currencyList/currency/symbolPlacement" containerType="SINGLE" label="symbolPlacement" name="symbolPlacement" type="string"/>
+<Field __sourcePath="{}/list/currencyList/currency/unbilledOrders" containerType="SINGLE" label="unbilledOrders" name="unbilledOrders" type="number"/>
+</Record>
+</Metadata>
+<Metadata __sourcePath="{}/list/customFieldList/customField" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="a04ca577-da10-476c-9f0a-73c8580b2fc6" _parent_id="__parent_id" _type="Output" id="d579dd61-a71c-486c-829a-57210746ffc9">
+<Record fieldDelimiter="|" name="customField" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+</Record>
+</Metadata>
+<Metadata __sourcePath="{}/list/downloadList/download" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="a04ca577-da10-476c-9f0a-73c8580b2fc6" _parent_id="__parent_id" _type="Output" id="cb3d2503-25c9-42ec-9306-d127a6898511">
+<Record fieldDelimiter="|" name="download" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __dmType="Calendar" __sourcePath="{}/list/downloadList/download/expiration" containerType="SINGLE" label="expiration" name="expiration" type="string"/>
+<Field __sourcePath="{}/list/downloadList/download/file/externalId" containerType="SINGLE" label="externalId" name="externalId" type="string"/>
+<Field __sourcePath="{}/list/downloadList/download/file/internalId" containerType="SINGLE" label="internalId" name="internalId" type="string"/>
+<Field __sourcePath="{}/list/downloadList/download/file/name" containerType="SINGLE" label="name" name="name" type="string"/>
+<Field __sourcePath="{}/list/downloadList/download/file/type" containerType="SINGLE" label="type" name="type" type="string"/>
+<Field __sourcePath="{}/list/downloadList/download/licenseCode" containerType="SINGLE" label="licenseCode" name="licenseCode" type="string"/>
+<Field __sourcePath="{}/list/downloadList/download/remainingDownloads" containerType="SINGLE" label="remainingDownloads" name="remainingDownloads" type="long"/>
+</Record>
+</Metadata>
+<Metadata __sourcePath="{}/list/groupPricingList/groupPricing" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="a04ca577-da10-476c-9f0a-73c8580b2fc6" _parent_id="__parent_id" _type="Output" id="50cb1ae0-62d2-46c9-b3fd-09f4f32faa99">
+<Record fieldDelimiter="|" name="groupPricing" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __sourcePath="{}/list/groupPricingList/groupPricing/group/externalId" containerType="SINGLE" label="externalId" name="externalId" type="string"/>
+<Field __sourcePath="{}/list/groupPricingList/groupPricing/group/internalId" containerType="SINGLE" label="internalId" name="internalId" type="string"/>
+<Field __sourcePath="{}/list/groupPricingList/groupPricing/group/name" containerType="SINGLE" label="name" name="name" type="string"/>
+<Field __sourcePath="{}/list/groupPricingList/groupPricing/group/type" containerType="SINGLE" label="type" name="type" type="string"/>
+<Field __sourcePath="{}/list/groupPricingList/groupPricing/level/externalId" containerType="SINGLE" label="externalId" name="externalId_1" type="string"/>
+<Field __sourcePath="{}/list/groupPricingList/groupPricing/level/internalId" containerType="SINGLE" label="internalId" name="internalId_1" type="string"/>
+<Field __sourcePath="{}/list/groupPricingList/groupPricing/level/name" containerType="SINGLE" label="name" name="name_1" type="string"/>
+<Field __sourcePath="{}/list/groupPricingList/groupPricing/level/type" containerType="SINGLE" label="type" name="type_1" type="string"/>
+</Record>
+</Metadata>
+<Metadata __sourcePath="{}/list/itemPricingList/itemPricing" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="a04ca577-da10-476c-9f0a-73c8580b2fc6" _parent_id="__parent_id" _type="Output" id="c0efb828-0582-4c4a-af1c-637a8a8bb4de">
+<Record fieldDelimiter="|" name="itemPricing" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __sourcePath="{}/list/itemPricingList/itemPricing/currency/externalId" containerType="SINGLE" label="externalId" name="externalId" type="string"/>
+<Field __sourcePath="{}/list/itemPricingList/itemPricing/currency/internalId" containerType="SINGLE" label="internalId" name="internalId" type="string"/>
+<Field __sourcePath="{}/list/itemPricingList/itemPricing/currency/name" containerType="SINGLE" label="name" name="name" type="string"/>
+<Field __sourcePath="{}/list/itemPricingList/itemPricing/currency/type" containerType="SINGLE" label="type" name="type" type="string"/>
+<Field __sourcePath="{}/list/itemPricingList/itemPricing/item/externalId" containerType="SINGLE" label="externalId" name="externalId_1" type="string"/>
+<Field __sourcePath="{}/list/itemPricingList/itemPricing/item/internalId" containerType="SINGLE" label="internalId" name="internalId_1" type="string"/>
+<Field __sourcePath="{}/list/itemPricingList/itemPricing/item/name" containerType="SINGLE" label="name" name="name_1" type="string"/>
+<Field __sourcePath="{}/list/itemPricingList/itemPricing/item/type" containerType="SINGLE" label="type" name="type_1" type="string"/>
+<Field __sourcePath="{}/list/itemPricingList/itemPricing/level/externalId" containerType="SINGLE" label="externalId" name="externalId_2" type="string"/>
+<Field __sourcePath="{}/list/itemPricingList/itemPricing/level/internalId" containerType="SINGLE" label="internalId" name="internalId_2" type="string"/>
+<Field __sourcePath="{}/list/itemPricingList/itemPricing/level/name" containerType="SINGLE" label="name" name="name_2" type="string"/>
+<Field __sourcePath="{}/list/itemPricingList/itemPricing/level/type" containerType="SINGLE" label="type" name="type_2" type="string"/>
+<Field __sourcePath="{}/list/itemPricingList/itemPricing/price" containerType="SINGLE" label="price" name="price" type="number"/>
+</Record>
+</Metadata>
+<Metadata __sourcePath="{}/list" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _type="Input" id="bf991dfe-1155-4170-8c64-41b66c001d27">
+<Record fieldDelimiter="|" name="list" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __sourcePath="{}/list/confirmation" containerType="SINGLE" label="confirmation" name="confirmation" type="boolean"/>
+<Field __sourcePath="{}/list/created_at" containerType="SINGLE" label="created_at" name="created_at" type="string"/>
+<Field __sourcePath="{}/list/created_in" containerType="SINGLE" label="created_in" name="created_in" type="string"/>
+<Field __sourcePath="{}/list/customer_id" containerType="SINGLE" label="customer_id" name="customer_id" type="integer"/>
+<Field __sourcePath="{}/list/dob" containerType="SINGLE" label="dob" name="dob" type="string"/>
+<Field __sourcePath="{}/list/email" containerType="SINGLE" label="email" name="email" type="string"/>
+<Field __sourcePath="{}/list/firstname" containerType="SINGLE" label="firstname" name="firstname" type="string"/>
+<Field __sourcePath="{}/list/group_id" containerType="SINGLE" label="group_id" name="group_id" type="integer"/>
+<Field __sourcePath="{}/list/increment_id" containerType="SINGLE" label="increment_id" name="increment_id" type="string"/>
+<Field __sourcePath="{}/list/lastname" containerType="SINGLE" label="lastname" name="lastname" type="string"/>
+<Field __sourcePath="{}/list/middlename" containerType="SINGLE" label="middlename" name="middlename" type="string"/>
+<Field __sourcePath="{}/list/password_hash" containerType="SINGLE" label="password_hash" name="password_hash" type="string"/>
+<Field __sourcePath="{}/list/prefix" containerType="SINGLE" label="prefix" name="prefix" type="string"/>
+<Field __sourcePath="{}/list/store_id" containerType="SINGLE" label="store_id" name="store_id" type="integer"/>
+<Field __sourcePath="{}/list/suffix" containerType="SINGLE" label="suffix" name="suffix" type="string"/>
+<Field __sourcePath="{}/list/taxvat" containerType="SINGLE" label="taxvat" name="taxvat" type="string"/>
+<Field __sourcePath="{}/list/updated_at" containerType="SINGLE" label="updated_at" name="updated_at" type="string"/>
+<Field __sourcePath="{}/list/website_id" containerType="SINGLE" label="website_id" name="website_id" type="integer"/>
+</Record>
+</Metadata>
+<Metadata __sourcePath="{}/list" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _type="Output" id="a04ca577-da10-476c-9f0a-73c8580b2fc6">
+<Record fieldDelimiter="|" name="list" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __sourcePath="{}/list/accessRole/externalId" containerType="SINGLE" label="externalId" name="externalId" type="string"/>
+<Field __sourcePath="{}/list/accessRole/internalId" containerType="SINGLE" label="internalId" name="internalId" type="string"/>
+<Field __sourcePath="{}/list/accessRole/name" containerType="SINGLE" label="name" name="name" type="string"/>
+<Field __sourcePath="{}/list/accessRole/type" containerType="SINGLE" label="type" name="type" type="string"/>
+<Field __sourcePath="{}/list/accountNumber" containerType="SINGLE" label="accountNumber" name="accountNumber" type="string"/>
+<Field __sourcePath="{}/list/aging" containerType="SINGLE" label="aging" name="aging" type="number"/>
+<Field __sourcePath="{}/list/altEmail" containerType="SINGLE" label="altEmail" name="altEmail" type="string"/>
+<Field __sourcePath="{}/list/altName" containerType="SINGLE" label="altName" name="altName" type="string"/>
+<Field __sourcePath="{}/list/altPhone" containerType="SINGLE" label="altPhone" name="altPhone" type="string"/>
+<Field __sourcePath="{}/list/balance" containerType="SINGLE" label="balance" name="balance" type="number"/>
+<Field __sourcePath="{}/list/billPay" containerType="SINGLE" label="billPay" name="billPay" type="boolean"/>
+<Field __sourcePath="{}/list/buyingReason/externalId" containerType="SINGLE" label="externalId" name="externalId_1" type="string"/>
+<Field __sourcePath="{}/list/buyingReason/internalId" containerType="SINGLE" label="internalId" name="internalId_1" type="string"/>
+<Field __sourcePath="{}/list/buyingReason/name" containerType="SINGLE" label="name" name="name_1" type="string"/>
+<Field __sourcePath="{}/list/buyingReason/type" containerType="SINGLE" label="type" name="type_1" type="string"/>
+<Field __sourcePath="{}/list/buyingTimeFrame/externalId" containerType="SINGLE" label="externalId" name="externalId_2" type="string"/>
+<Field __sourcePath="{}/list/buyingTimeFrame/internalId" containerType="SINGLE" label="internalId" name="internalId_2" type="string"/>
+<Field __sourcePath="{}/list/buyingTimeFrame/name" containerType="SINGLE" label="name" name="name_2" type="string"/>
+<Field __sourcePath="{}/list/buyingTimeFrame/type" containerType="SINGLE" label="type" name="type_2" type="string"/>
+<Field __sourcePath="{}/list/campaignCategory/externalId" containerType="SINGLE" label="externalId" name="externalId_3" type="string"/>
+<Field __sourcePath="{}/list/campaignCategory/internalId" containerType="SINGLE" label="internalId" name="internalId_3" type="string"/>
+<Field __sourcePath="{}/list/campaignCategory/name" containerType="SINGLE" label="name" name="name_3" type="string"/>
+<Field __sourcePath="{}/list/campaignCategory/type" containerType="SINGLE" label="type" name="type_3" type="string"/>
+<Field __sourcePath="{}/list/category/externalId" containerType="SINGLE" label="externalId" name="externalId_4" type="string"/>
+<Field __sourcePath="{}/list/category/internalId" containerType="SINGLE" label="internalId" name="internalId_4" type="string"/>
+<Field __sourcePath="{}/list/category/name" containerType="SINGLE" label="name" name="name_4" type="string"/>
+<Field __sourcePath="{}/list/category/type" containerType="SINGLE" label="type" name="type_4" type="string"/>
+<Field __sourcePath="{}/list/clickStream" containerType="SINGLE" label="clickStream" name="clickStream" type="string"/>
+<Field __sourcePath="{}/list/comments" containerType="SINGLE" label="comments" name="comments" type="string"/>
+<Field __sourcePath="{}/list/companyName" containerType="SINGLE" label="companyName" name="companyName" type="string"/>
+<Field __sourcePath="{}/list/consolAging" containerType="SINGLE" label="consolAging" name="consolAging" type="number"/>
+<Field __sourcePath="{}/list/consolBalance" containerType="SINGLE" label="consolBalance" name="consolBalance" type="number"/>
+<Field __sourcePath="{}/list/consolDaysOverdue" containerType="SINGLE" label="consolDaysOverdue" name="consolDaysOverdue" type="long"/>
+<Field __sourcePath="{}/list/consolDepositBalance" containerType="SINGLE" label="consolDepositBalance" name="consolDepositBalance" type="number"/>
+<Field __sourcePath="{}/list/consolOverdueBalance" containerType="SINGLE" label="consolOverdueBalance" name="consolOverdueBalance" type="number"/>
+<Field __sourcePath="{}/list/consolUnbilledOrders" containerType="SINGLE" label="consolUnbilledOrders" name="consolUnbilledOrders" type="number"/>
+<Field __sourcePath="{}/list/contribPct" containerType="SINGLE" label="contribPct" name="contribPct" type="string"/>
+<Field __sourcePath="{}/list/creditHoldOverride" containerType="SINGLE" label="creditHoldOverride" name="creditHoldOverride" type="string"/>
+<Field __sourcePath="{}/list/creditLimit" containerType="SINGLE" label="creditLimit" name="creditLimit" type="number"/>
+<Field __sourcePath="{}/list/currency/externalId" containerType="SINGLE" label="externalId" name="externalId_5" type="string"/>
+<Field __sourcePath="{}/list/currency/internalId" containerType="SINGLE" label="internalId" name="internalId_5" type="string"/>
+<Field __sourcePath="{}/list/currency/name" containerType="SINGLE" label="name" name="name_5" type="string"/>
+<Field __sourcePath="{}/list/currency/type" containerType="SINGLE" label="type" name="type_5" type="string"/>
+<Field __sourcePath="{}/list/customForm/externalId" containerType="SINGLE" label="externalId" name="externalId_6" type="string"/>
+<Field __sourcePath="{}/list/customForm/internalId" containerType="SINGLE" label="internalId" name="internalId_6" type="string"/>
+<Field __sourcePath="{}/list/customForm/name" containerType="SINGLE" label="name" name="name_6" type="string"/>
+<Field __sourcePath="{}/list/customForm/type" containerType="SINGLE" label="type" name="type_6" type="string"/>
+<Field __dmType="Calendar" __sourcePath="{}/list/dateCreated" containerType="SINGLE" label="dateCreated" name="dateCreated" type="string"/>
+<Field __sourcePath="{}/list/daysOverdue" containerType="SINGLE" label="daysOverdue" name="daysOverdue" type="long"/>
+<Field __sourcePath="{}/list/defaultAddress" containerType="SINGLE" label="defaultAddress" name="defaultAddress" type="string"/>
+<Field __sourcePath="{}/list/depositBalance" containerType="SINGLE" label="depositBalance" name="depositBalance" type="number"/>
+<Field __sourcePath="{}/list/displaySymbol" containerType="SINGLE" label="displaySymbol" name="displaySymbol" type="string"/>
+<Field __sourcePath="{}/list/drAccount/externalId" containerType="SINGLE" label="externalId" name="externalId_7" type="string"/>
+<Field __sourcePath="{}/list/drAccount/internalId" containerType="SINGLE" label="internalId" name="internalId_7" type="string"/>
+<Field __sourcePath="{}/list/drAccount/name" containerType="SINGLE" label="name" name="name_7" type="string"/>
+<Field __sourcePath="{}/list/drAccount/type" containerType="SINGLE" label="type" name="type_7" type="string"/>
+<Field __sourcePath="{}/list/email" containerType="SINGLE" label="email" name="email" type="string"/>
+<Field __sourcePath="{}/list/emailPreference" containerType="SINGLE" label="emailPreference" name="emailPreference" type="string"/>
+<Field __sourcePath="{}/list/emailTransactions" containerType="SINGLE" label="emailTransactions" name="emailTransactions" type="boolean"/>
+<Field __dmType="Calendar" __sourcePath="{}/list/endDate" containerType="SINGLE" label="endDate" name="endDate" type="string"/>
+<Field __sourcePath="{}/list/entityId" containerType="SINGLE" label="entityId" name="entityId" type="string"/>
+<Field __sourcePath="{}/list/entityStatus/externalId" containerType="SINGLE" label="externalId" name="externalId_8" type="string"/>
+<Field __sourcePath="{}/list/entityStatus/internalId" containerType="SINGLE" label="internalId" name="internalId_8" type="string"/>
+<Field __sourcePath="{}/list/entityStatus/name" containerType="SINGLE" label="name" name="name_8" type="string"/>
+<Field __sourcePath="{}/list/entityStatus/type" containerType="SINGLE" label="type" name="type_8" type="string"/>
+<Field __sourcePath="{}/list/estimatedBudget" containerType="SINGLE" label="estimatedBudget" name="estimatedBudget" type="number"/>
+<Field __sourcePath="{}/list/externalId" containerType="SINGLE" label="externalId" name="externalId_9" type="string"/>
+<Field __sourcePath="{}/list/fax" containerType="SINGLE" label="fax" name="fax" type="string"/>
+<Field __sourcePath="{}/list/faxTransactions" containerType="SINGLE" label="faxTransactions" name="faxTransactions" type="boolean"/>
+<Field __sourcePath="{}/list/firstName" containerType="SINGLE" label="firstName" name="firstName" type="string"/>
+<Field __dmType="Calendar" __sourcePath="{}/list/firstVisit" containerType="SINGLE" label="firstVisit" name="firstVisit" type="string"/>
+<Field __sourcePath="{}/list/fxAccount/externalId" containerType="SINGLE" label="externalId" name="externalId_10" type="string"/>
+<Field __sourcePath="{}/list/fxAccount/internalId" containerType="SINGLE" label="internalId" name="internalId_9" type="string"/>
+<Field __sourcePath="{}/list/fxAccount/name" containerType="SINGLE" label="name" name="name_9" type="string"/>
+<Field __sourcePath="{}/list/fxAccount/type" containerType="SINGLE" label="type" name="type_9" type="string"/>
+<Field __sourcePath="{}/list/giveAccess" containerType="SINGLE" label="giveAccess" name="giveAccess" type="boolean"/>
+<Field __sourcePath="{}/list/globalSubscriptionStatus" containerType="SINGLE" label="globalSubscriptionStatus" name="globalSubscriptionStatus" type="string"/>
+<Field __sourcePath="{}/list/homePhone" containerType="SINGLE" label="homePhone" name="homePhone" type="string"/>
+<Field __sourcePath="{}/list/image/externalId" containerType="SINGLE" label="externalId" name="externalId_11" type="string"/>
+<Field __sourcePath="{}/list/image/internalId" containerType="SINGLE" label="internalId" name="internalId_10" type="string"/>
+<Field __sourcePath="{}/list/image/name" containerType="SINGLE" label="name" name="name_10" type="string"/>
+<Field __sourcePath="{}/list/image/type" containerType="SINGLE" label="type" name="type_10" type="string"/>
+<Field __sourcePath="{}/list/internalId" containerType="SINGLE" label="internalId" name="internalId_11" type="string"/>
+<Field __sourcePath="{}/list/isBudgetApproved" containerType="SINGLE" label="isBudgetApproved" name="isBudgetApproved" type="boolean"/>
+<Field __sourcePath="{}/list/isInactive" containerType="SINGLE" label="isInactive" name="isInactive" type="boolean"/>
+<Field __sourcePath="{}/list/isPerson" containerType="SINGLE" label="isPerson" name="isPerson" type="boolean"/>
+<Field __sourcePath="{}/list/keywords" containerType="SINGLE" label="keywords" name="keywords" type="string"/>
+<Field __sourcePath="{}/list/language" containerType="SINGLE" label="language" name="language" type="string"/>
+<Field __dmType="Calendar" __sourcePath="{}/list/lastModifiedDate" containerType="SINGLE" label="lastModifiedDate" name="lastModifiedDate" type="string"/>
+<Field __sourcePath="{}/list/lastName" containerType="SINGLE" label="lastName" name="lastName" type="string"/>
+<Field __sourcePath="{}/list/lastPageVisited" containerType="SINGLE" label="lastPageVisited" name="lastPageVisited" type="string"/>
+<Field __dmType="Calendar" __sourcePath="{}/list/lastVisit" containerType="SINGLE" label="lastVisit" name="lastVisit" type="string"/>
+<Field __sourcePath="{}/list/leadSource/externalId" containerType="SINGLE" label="externalId" name="externalId_12" type="string"/>
+<Field __sourcePath="{}/list/leadSource/internalId" containerType="SINGLE" label="internalId" name="internalId_12" type="string"/>
+<Field __sourcePath="{}/list/leadSource/name" containerType="SINGLE" label="name" name="name_11" type="string"/>
+<Field __sourcePath="{}/list/leadSource/type" containerType="SINGLE" label="type" name="type_11" type="string"/>
+<Field __sourcePath="{}/list/middleName" containerType="SINGLE" label="middleName" name="middleName" type="string"/>
+<Field __sourcePath="{}/list/mobilePhone" containerType="SINGLE" label="mobilePhone" name="mobilePhone" type="string"/>
+<Field __sourcePath="{}/list/negativeNumberFormat" containerType="SINGLE" label="negativeNumberFormat" name="negativeNumberFormat" type="string"/>
+<Field __sourcePath="{}/list/nullFieldList/name" containerType="list" label="name" name="name_12" type="string"/>
+<Field __sourcePath="{}/list/numberFormat" containerType="SINGLE" label="numberFormat" name="numberFormat" type="string"/>
+<Field __sourcePath="{}/list/openingBalance" containerType="SINGLE" label="openingBalance" name="openingBalance" type="number"/>
+<Field __sourcePath="{}/list/openingBalanceAccount/externalId" containerType="SINGLE" label="externalId" name="externalId_13" type="string"/>
+<Field __sourcePath="{}/list/openingBalanceAccount/internalId" containerType="SINGLE" label="internalId" name="internalId_13" type="string"/>
+<Field __sourcePath="{}/list/openingBalanceAccount/name" containerType="SINGLE" label="name" name="name_13" type="string"/>
+<Field __sourcePath="{}/list/openingBalanceAccount/type" containerType="SINGLE" label="type" name="type_12" type="string"/>
+<Field __dmType="Calendar" __sourcePath="{}/list/openingBalanceDate" containerType="SINGLE" label="openingBalanceDate" name="openingBalanceDate" type="string"/>
+<Field __sourcePath="{}/list/overdueBalance" containerType="SINGLE" label="overdueBalance" name="overdueBalance" type="number"/>
+<Field __sourcePath="{}/list/overrideCurrencyFormat" containerType="SINGLE" label="overrideCurrencyFormat" name="overrideCurrencyFormat" type="boolean"/>
+<Field __sourcePath="{}/list/parent/externalId" containerType="SINGLE" label="externalId" name="externalId_14" type="string"/>
+<Field __sourcePath="{}/list/parent/internalId" containerType="SINGLE" label="internalId" name="internalId_14" type="string"/>
+<Field __sourcePath="{}/list/parent/name" containerType="SINGLE" label="name" name="name_14" type="string"/>
+<Field __sourcePath="{}/list/parent/type" containerType="SINGLE" label="type" name="type_13" type="string"/>
+<Field __sourcePath="{}/list/partner/externalId" containerType="SINGLE" label="externalId" name="externalId_15" type="string"/>
+<Field __sourcePath="{}/list/partner/internalId" containerType="SINGLE" label="internalId" name="internalId_15" type="string"/>
+<Field __sourcePath="{}/list/partner/name" containerType="SINGLE" label="name" name="name_15" type="string"/>
+<Field __sourcePath="{}/list/partner/type" containerType="SINGLE" label="type" name="type_14" type="string"/>
+<Field __sourcePath="{}/list/password" containerType="SINGLE" label="password" name="password" type="string"/>
+<Field __sourcePath="{}/list/password2" containerType="SINGLE" label="password2" name="password2" type="string"/>
+<Field __sourcePath="{}/list/phone" containerType="SINGLE" label="phone" name="phone" type="string"/>
+<Field __sourcePath="{}/list/phoneticName" containerType="SINGLE" label="phoneticName" name="phoneticName" type="string"/>
+<Field __sourcePath="{}/list/prefCCProcessor/externalId" containerType="SINGLE" label="externalId" name="externalId_16" type="string"/>
+<Field __sourcePath="{}/list/prefCCProcessor/internalId" containerType="SINGLE" label="internalId" name="internalId_16" type="string"/>
+<Field __sourcePath="{}/list/prefCCProcessor/name" containerType="SINGLE" label="name" name="name_16" type="string"/>
+<Field __sourcePath="{}/list/prefCCProcessor/type" containerType="SINGLE" label="type" name="type_15" type="string"/>
+<Field __sourcePath="{}/list/priceLevel/externalId" containerType="SINGLE" label="externalId" name="externalId_17" type="string"/>
+<Field __sourcePath="{}/list/priceLevel/internalId" containerType="SINGLE" label="internalId" name="internalId_17" type="string"/>
+<Field __sourcePath="{}/list/priceLevel/name" containerType="SINGLE" label="name" name="name_17" type="string"/>
+<Field __sourcePath="{}/list/priceLevel/type" containerType="SINGLE" label="type" name="type_16" type="string"/>
+<Field __sourcePath="{}/list/printOnCheckAs" containerType="SINGLE" label="printOnCheckAs" name="printOnCheckAs" type="string"/>
+<Field __sourcePath="{}/list/printTransactions" containerType="SINGLE" label="printTransactions" name="printTransactions" type="boolean"/>
+<Field __sourcePath="{}/list/receivablesAccount/externalId" containerType="SINGLE" label="externalId" name="externalId_18" type="string"/>
+<Field __sourcePath="{}/list/receivablesAccount/internalId" containerType="SINGLE" label="internalId" name="internalId_18" type="string"/>
+<Field __sourcePath="{}/list/receivablesAccount/name" containerType="SINGLE" label="name" name="name_18" type="string"/>
+<Field __sourcePath="{}/list/receivablesAccount/type" containerType="SINGLE" label="type" name="type_17" type="string"/>
+<Field __sourcePath="{}/list/referrer" containerType="SINGLE" label="referrer" name="referrer" type="string"/>
+<Field __sourcePath="{}/list/reminderDays" containerType="SINGLE" label="reminderDays" name="reminderDays" type="long"/>
+<Field __sourcePath="{}/list/representingSubsidiary/externalId" containerType="SINGLE" label="externalId" name="externalId_19" type="string"/>
+<Field __sourcePath="{}/list/representingSubsidiary/internalId" containerType="SINGLE" label="internalId" name="internalId_19" type="string"/>
+<Field __sourcePath="{}/list/representingSubsidiary/name" containerType="SINGLE" label="name" name="name_19" type="string"/>
+<Field __sourcePath="{}/list/representingSubsidiary/type" containerType="SINGLE" label="type" name="type_18" type="string"/>
+<Field __sourcePath="{}/list/requirePwdChange" containerType="SINGLE" label="requirePwdChange" name="requirePwdChange" type="boolean"/>
+<Field __sourcePath="{}/list/resaleNumber" containerType="SINGLE" label="resaleNumber" name="resaleNumber" type="string"/>
+<Field __sourcePath="{}/list/salesGroup/externalId" containerType="SINGLE" label="externalId" name="externalId_20" type="string"/>
+<Field __sourcePath="{}/list/salesGroup/internalId" containerType="SINGLE" label="internalId" name="internalId_20" type="string"/>
+<Field __sourcePath="{}/list/salesGroup/name" containerType="SINGLE" label="name" name="name_20" type="string"/>
+<Field __sourcePath="{}/list/salesGroup/type" containerType="SINGLE" label="type" name="type_19" type="string"/>
+<Field __sourcePath="{}/list/salesReadiness/externalId" containerType="SINGLE" label="externalId" name="externalId_21" type="string"/>
+<Field __sourcePath="{}/list/salesReadiness/internalId" containerType="SINGLE" label="internalId" name="internalId_21" type="string"/>
+<Field __sourcePath="{}/list/salesReadiness/name" containerType="SINGLE" label="name" name="name_21" type="string"/>
+<Field __sourcePath="{}/list/salesReadiness/type" containerType="SINGLE" label="type" name="type_20" type="string"/>
+<Field __sourcePath="{}/list/salesRep/externalId" containerType="SINGLE" label="externalId" name="externalId_22" type="string"/>
+<Field __sourcePath="{}/list/salesRep/internalId" containerType="SINGLE" label="internalId" name="internalId_22" type="string"/>
+<Field __sourcePath="{}/list/salesRep/name" containerType="SINGLE" label="name" name="name_22" type="string"/>
+<Field __sourcePath="{}/list/salesRep/type" containerType="SINGLE" label="type" name="type_21" type="string"/>
+<Field __sourcePath="{}/list/salutation" containerType="SINGLE" label="salutation" name="salutation" type="string"/>
+<Field __sourcePath="{}/list/sendEmail" containerType="SINGLE" label="sendEmail" name="sendEmail" type="boolean"/>
+<Field __sourcePath="{}/list/shipComplete" containerType="SINGLE" label="shipComplete" name="shipComplete" type="boolean"/>
+<Field __sourcePath="{}/list/shippingItem/externalId" containerType="SINGLE" label="externalId" name="externalId_23" type="string"/>
+<Field __sourcePath="{}/list/shippingItem/internalId" containerType="SINGLE" label="internalId" name="internalId_23" type="string"/>
+<Field __sourcePath="{}/list/shippingItem/name" containerType="SINGLE" label="name" name="name_23" type="string"/>
+<Field __sourcePath="{}/list/shippingItem/type" containerType="SINGLE" label="type" name="type_22" type="string"/>
+<Field __sourcePath="{}/list/stage" containerType="SINGLE" label="stage" name="stage" type="string"/>
+<Field __dmType="Calendar" __sourcePath="{}/list/startDate" containerType="SINGLE" label="startDate" name="startDate" type="string"/>
+<Field __sourcePath="{}/list/subsidiary/externalId" containerType="SINGLE" label="externalId" name="externalId_24" type="string"/>
+<Field __sourcePath="{}/list/subsidiary/internalId" containerType="SINGLE" label="internalId" name="internalId_24" type="string"/>
+<Field __sourcePath="{}/list/subsidiary/name" containerType="SINGLE" label="name" name="name_24" type="string"/>
+<Field __sourcePath="{}/list/subsidiary/type" containerType="SINGLE" label="type" name="type_23" type="string"/>
+<Field __sourcePath="{}/list/symbolPlacement" containerType="SINGLE" label="symbolPlacement" name="symbolPlacement" type="string"/>
+<Field __sourcePath="{}/list/syncPartnerTeams" containerType="SINGLE" label="syncPartnerTeams" name="syncPartnerTeams" type="boolean"/>
+<Field __sourcePath="{}/list/taxExempt" containerType="SINGLE" label="taxExempt" name="taxExempt" type="boolean"/>
+<Field __sourcePath="{}/list/taxItem/externalId" containerType="SINGLE" label="externalId" name="externalId_25" type="string"/>
+<Field __sourcePath="{}/list/taxItem/internalId" containerType="SINGLE" label="internalId" name="internalId_25" type="string"/>
+<Field __sourcePath="{}/list/taxItem/name" containerType="SINGLE" label="name" name="name_25" type="string"/>
+<Field __sourcePath="{}/list/taxItem/type" containerType="SINGLE" label="type" name="type_24" type="string"/>
+<Field __sourcePath="{}/list/taxable" containerType="SINGLE" label="taxable" name="taxable" type="boolean"/>
+<Field __sourcePath="{}/list/terms/externalId" containerType="SINGLE" label="externalId" name="externalId_26" type="string"/>
+<Field __sourcePath="{}/list/terms/internalId" containerType="SINGLE" label="internalId" name="internalId_26" type="string"/>
+<Field __sourcePath="{}/list/terms/name" containerType="SINGLE" label="name" name="name_26" type="string"/>
+<Field __sourcePath="{}/list/terms/type" containerType="SINGLE" label="type" name="type_25" type="string"/>
+<Field __sourcePath="{}/list/territory/externalId" containerType="SINGLE" label="externalId" name="externalId_27" type="string"/>
+<Field __sourcePath="{}/list/territory/internalId" containerType="SINGLE" label="internalId" name="internalId_27" type="string"/>
+<Field __sourcePath="{}/list/territory/name" containerType="SINGLE" label="name" name="name_27" type="string"/>
+<Field __sourcePath="{}/list/territory/type" containerType="SINGLE" label="type" name="type_26" type="string"/>
+<Field __sourcePath="{}/list/thirdPartyAcct" containerType="SINGLE" label="thirdPartyAcct" name="thirdPartyAcct" type="string"/>
+<Field __sourcePath="{}/list/thirdPartyCountry" containerType="SINGLE" label="thirdPartyCountry" name="thirdPartyCountry" type="string"/>
+<Field __sourcePath="{}/list/thirdPartyZipcode" containerType="SINGLE" label="thirdPartyZipcode" name="thirdPartyZipcode" type="string"/>
+<Field __sourcePath="{}/list/title" containerType="SINGLE" label="title" name="title" type="string"/>
+<Field __sourcePath="{}/list/unbilledOrders" containerType="SINGLE" label="unbilledOrders" name="unbilledOrders" type="number"/>
+<Field __sourcePath="{}/list/url" containerType="SINGLE" label="url" name="url" type="string"/>
+<Field __sourcePath="{}/list/vatRegNumber" containerType="SINGLE" label="vatRegNumber" name="vatRegNumber" type="string"/>
+<Field __sourcePath="{}/list/visits" containerType="SINGLE" label="visits" name="visits" type="long"/>
+<Field __sourcePath="{}/list/webLead" containerType="SINGLE" label="webLead" name="webLead" type="string"/>
+</Record>
+</Metadata>
+<Metadata __sourcePath="{}/list/partnersList/partners" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="a04ca577-da10-476c-9f0a-73c8580b2fc6" _parent_id="__parent_id" _type="Output" id="d1c182f7-ef1b-4ec1-ad5d-bbcc9a1fe643">
+<Record fieldDelimiter="|" name="partners" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __sourcePath="{}/list/partnersList/partners/contribution" containerType="SINGLE" label="contribution" name="contribution" type="number"/>
+<Field __sourcePath="{}/list/partnersList/partners/isPrimary" containerType="SINGLE" label="isPrimary" name="isPrimary" type="boolean"/>
+<Field __sourcePath="{}/list/partnersList/partners/partner/externalId" containerType="SINGLE" label="externalId" name="externalId" type="string"/>
+<Field __sourcePath="{}/list/partnersList/partners/partner/internalId" containerType="SINGLE" label="internalId" name="internalId" type="string"/>
+<Field __sourcePath="{}/list/partnersList/partners/partner/name" containerType="SINGLE" label="name" name="name" type="string"/>
+<Field __sourcePath="{}/list/partnersList/partners/partner/type" containerType="SINGLE" label="type" name="type" type="string"/>
+<Field __sourcePath="{}/list/partnersList/partners/partnerRole/externalId" containerType="SINGLE" label="externalId" name="externalId_1" type="string"/>
+<Field __sourcePath="{}/list/partnersList/partners/partnerRole/internalId" containerType="SINGLE" label="internalId" name="internalId_1" type="string"/>
+<Field __sourcePath="{}/list/partnersList/partners/partnerRole/name" containerType="SINGLE" label="name" name="name_1" type="string"/>
+<Field __sourcePath="{}/list/partnersList/partners/partnerRole/type" containerType="SINGLE" label="type" name="type_1" type="string"/>
+</Record>
+</Metadata>
+<Metadata __sourcePath="{}/list/salesTeamList/salesTeam" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="a04ca577-da10-476c-9f0a-73c8580b2fc6" _parent_id="__parent_id" _type="Output" id="822d91ad-574f-4b68-9793-50fb7537980a">
+<Record fieldDelimiter="|" name="salesTeam" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __sourcePath="{}/list/salesTeamList/salesTeam/contribution" containerType="SINGLE" label="contribution" name="contribution" type="number"/>
+<Field __sourcePath="{}/list/salesTeamList/salesTeam/employee/externalId" containerType="SINGLE" label="externalId" name="externalId" type="string"/>
+<Field __sourcePath="{}/list/salesTeamList/salesTeam/employee/internalId" containerType="SINGLE" label="internalId" name="internalId" type="string"/>
+<Field __sourcePath="{}/list/salesTeamList/salesTeam/employee/name" containerType="SINGLE" label="name" name="name" type="string"/>
+<Field __sourcePath="{}/list/salesTeamList/salesTeam/employee/type" containerType="SINGLE" label="type" name="type" type="string"/>
+<Field __sourcePath="{}/list/salesTeamList/salesTeam/isPrimary" containerType="SINGLE" label="isPrimary" name="isPrimary" type="boolean"/>
+<Field __sourcePath="{}/list/salesTeamList/salesTeam/salesRole/externalId" containerType="SINGLE" label="externalId" name="externalId_1" type="string"/>
+<Field __sourcePath="{}/list/salesTeamList/salesTeam/salesRole/internalId" containerType="SINGLE" label="internalId" name="internalId_1" type="string"/>
+<Field __sourcePath="{}/list/salesTeamList/salesTeam/salesRole/name" containerType="SINGLE" label="name" name="name_1" type="string"/>
+<Field __sourcePath="{}/list/salesTeamList/salesTeam/salesRole/type" containerType="SINGLE" label="type" name="type_1" type="string"/>
+</Record>
+</Metadata>
+<Metadata __sourcePath="{}/list/subscriptionsList/subscriptions" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="a04ca577-da10-476c-9f0a-73c8580b2fc6" _parent_id="__parent_id" _type="Output" id="884516cc-86a0-48ff-9577-63fe5fc2f406">
+<Record fieldDelimiter="|" name="subscriptions" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __dmType="Calendar" __sourcePath="{}/list/subscriptionsList/subscriptions/lastModifiedDate" containerType="SINGLE" label="lastModifiedDate" name="lastModifiedDate" type="string"/>
+<Field __sourcePath="{}/list/subscriptionsList/subscriptions/subscribed" containerType="SINGLE" label="subscribed" name="subscribed" type="boolean"/>
+<Field __sourcePath="{}/list/subscriptionsList/subscriptions/subscription/externalId" containerType="SINGLE" label="externalId" name="externalId" type="string"/>
+<Field __sourcePath="{}/list/subscriptionsList/subscriptions/subscription/internalId" containerType="SINGLE" label="internalId" name="internalId" type="string"/>
+<Field __sourcePath="{}/list/subscriptionsList/subscriptions/subscription/name" containerType="SINGLE" label="name" name="name" type="string"/>
+<Field __sourcePath="{}/list/subscriptionsList/subscriptions/subscription/type" containerType="SINGLE" label="type" name="type" type="string"/>
+</Record>
+</Metadata>
+<Dictionary>
+<Entry id="DictionaryEntry0" input="true" name="inputPayload" output="false" type="object"/>
+<Entry id="DictionaryEntry1" input="false" name="outputPayload" output="true" type="object"/>
+<Entry dictval.__javaType="java.lang.Boolean" id="DictionaryEntry2" input="true" name="isPerson" output="true" type="boolean"/>
+</Dictionary>
+</Global>
+<Phase number="0">
+<Node enabled="enabled" fileURL="dict:inputPayload" guiHeight="0" guiName="Pojo READER" guiWidth="0" guiX="20" guiY="20" id="BEAN_READER0" type="BEAN_READER">
+<attr name="mapping"><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Context outPort="0" sequenceField="__id" xpath=".">
+  <Mapping cloverField="confirmation" trim="true" xpath="confirmation"/>
+  <Mapping cloverField="created_at" trim="true" xpath="created_at"/>
+  <Mapping cloverField="created_in" trim="true" xpath="created_in"/>
+  <Mapping cloverField="customer_id" trim="true" xpath="customer_id"/>
+  <Mapping cloverField="dob" trim="true" xpath="dob"/>
+  <Mapping cloverField="email" trim="true" xpath="email"/>
+  <Mapping cloverField="firstname" trim="true" xpath="firstname"/>
+  <Mapping cloverField="group_id" trim="true" xpath="group_id"/>
+  <Mapping cloverField="increment_id" trim="true" xpath="increment_id"/>
+  <Mapping cloverField="lastname" trim="true" xpath="lastname"/>
+  <Mapping cloverField="middlename" trim="true" xpath="middlename"/>
+  <Mapping cloverField="password_hash" trim="true" xpath="password_hash"/>
+  <Mapping cloverField="prefix" trim="true" xpath="prefix"/>
+  <Mapping cloverField="store_id" trim="true" xpath="store_id"/>
+  <Mapping cloverField="suffix" trim="true" xpath="suffix"/>
+  <Mapping cloverField="taxvat" trim="true" xpath="taxvat"/>
+  <Mapping cloverField="updated_at" trim="true" xpath="updated_at"/>
+  <Mapping cloverField="website_id" trim="true" xpath="website_id"/>
+</Context>
+]]></attr>
+<attr name="__typeName"><![CDATA[__default__]]></attr>
+<attr name="_data_format"><![CDATA[JAVA]]></attr>
+<attr name="schema"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<schema-object>
+  <schema-collection>
+    <typed-object-ref type-ref="com.magento.api.CustomerCustomerEntity"/>
+  </schema-collection>
+  <typed-object type="java.lang.Boolean"/>
+  <typed-object type="java.lang.Integer"/>
+  <typed-object type="java.lang.String"/>
+  <typed-object type="com.magento.api.CustomerCustomerEntity">
+    <typed-object-ref name="confirmation" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="created_at" type-ref="java.lang.String"/>
+    <typed-object-ref name="created_in" type-ref="java.lang.String"/>
+    <typed-object-ref name="customer_id" type-ref="java.lang.Integer"/>
+    <typed-object-ref name="dob" type-ref="java.lang.String"/>
+    <typed-object-ref name="email" type-ref="java.lang.String"/>
+    <typed-object-ref name="firstname" type-ref="java.lang.String"/>
+    <typed-object-ref name="group_id" type-ref="java.lang.Integer"/>
+    <typed-object-ref name="increment_id" type-ref="java.lang.String"/>
+    <typed-object-ref name="lastname" type-ref="java.lang.String"/>
+    <typed-object-ref name="middlename" type-ref="java.lang.String"/>
+    <typed-object-ref name="password_hash" type-ref="java.lang.String"/>
+    <typed-object-ref name="prefix" type-ref="java.lang.String"/>
+    <typed-object-ref name="store_id" type-ref="java.lang.Integer"/>
+    <typed-object-ref name="suffix" type-ref="java.lang.String"/>
+    <typed-object-ref name="taxvat" type-ref="java.lang.String"/>
+    <typed-object-ref name="updated_at" type-ref="java.lang.String"/>
+    <typed-object-ref name="website_id" type-ref="java.lang.Integer"/>
+  </typed-object>
+</schema-object>
+]]></attr>
+<attr name="__operationName"><![CDATA[http://www.mulesoft.org/schema/mule/magento/list-customers]]></attr>
+<attr name="__connectorName"><![CDATA[Magento]]></attr>
+</Node>
+<Node enabled="enabled" fileURL="dict:outputPayload" guiHeight="0" guiName="Pojo WRITER" guiWidth="0" guiX="900" guiY="20" id="BEAN_WRITER0" type="BEAN_WRITER">
+<attr name="mapping"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<clover:collection clover:name="list" xmlns:clover="http://www.cloveretl.com/ns/xmlmapping">
+  <item clover:inPort="0">
+    <accessRole>
+      <externalId>$0.externalId</externalId>
+      <internalId>$0.internalId</internalId>
+      <name>$0.name</name>
+      <type>$0.type</type>
+    </accessRole>
+    <accountNumber>$0.accountNumber</accountNumber>
+    <aging>$0.aging</aging>
+    <altEmail>$0.altEmail</altEmail>
+    <altName>$0.altName</altName>
+    <altPhone>$0.altPhone</altPhone>
+    <balance>$0.balance</balance>
+    <billPay>$0.billPay</billPay>
+    <buyingReason>
+      <externalId>$0.externalId_1</externalId>
+      <internalId>$0.internalId_1</internalId>
+      <name>$0.name_1</name>
+      <type>$0.type_1</type>
+    </buyingReason>
+    <buyingTimeFrame>
+      <externalId>$0.externalId_2</externalId>
+      <internalId>$0.internalId_2</internalId>
+      <name>$0.name_2</name>
+      <type>$0.type_2</type>
+    </buyingTimeFrame>
+    <campaignCategory>
+      <externalId>$0.externalId_3</externalId>
+      <internalId>$0.internalId_3</internalId>
+      <name>$0.name_3</name>
+      <type>$0.type_3</type>
+    </campaignCategory>
+    <category>
+      <externalId>$0.externalId_4</externalId>
+      <internalId>$0.internalId_4</internalId>
+      <name>$0.name_4</name>
+      <type>$0.type_4</type>
+    </category>
+    <clickStream>$0.clickStream</clickStream>
+    <comments>$0.comments</comments>
+    <companyName>$0.companyName</companyName>
+    <consolAging>$0.consolAging</consolAging>
+    <consolBalance>$0.consolBalance</consolBalance>
+    <consolDaysOverdue>$0.consolDaysOverdue</consolDaysOverdue>
+    <consolDepositBalance>$0.consolDepositBalance</consolDepositBalance>
+    <consolOverdueBalance>$0.consolOverdueBalance</consolOverdueBalance>
+    <consolUnbilledOrders>$0.consolUnbilledOrders</consolUnbilledOrders>
+    <contribPct>$0.contribPct</contribPct>
+    <creditHoldOverride>$0.creditHoldOverride</creditHoldOverride>
+    <creditLimit>$0.creditLimit</creditLimit>
+    <currency>
+      <externalId>$0.externalId_5</externalId>
+      <internalId>$0.internalId_5</internalId>
+      <name>$0.name_5</name>
+      <type>$0.type_5</type>
+    </currency>
+    <customForm>
+      <externalId>$0.externalId_6</externalId>
+      <internalId>$0.internalId_6</internalId>
+      <name>$0.name_6</name>
+      <type>$0.type_6</type>
+    </customForm>
+    <dateCreated>$0.dateCreated</dateCreated>
+    <daysOverdue>$0.daysOverdue</daysOverdue>
+    <defaultAddress>$0.defaultAddress</defaultAddress>
+    <depositBalance>$0.depositBalance</depositBalance>
+    <displaySymbol>$0.displaySymbol</displaySymbol>
+    <drAccount>
+      <externalId>$0.externalId_7</externalId>
+      <internalId>$0.internalId_7</internalId>
+      <name>$0.name_7</name>
+      <type>$0.type_7</type>
+    </drAccount>
+    <email>$0.email</email>
+    <emailPreference>$0.emailPreference</emailPreference>
+    <emailTransactions>$0.emailTransactions</emailTransactions>
+    <endDate>$0.endDate</endDate>
+    <entityId>$0.entityId</entityId>
+    <entityStatus>
+      <externalId>$0.externalId_8</externalId>
+      <internalId>$0.internalId_8</internalId>
+      <name>$0.name_8</name>
+      <type>$0.type_8</type>
+    </entityStatus>
+    <estimatedBudget>$0.estimatedBudget</estimatedBudget>
+    <externalId>$0.externalId_9</externalId>
+    <fax>$0.fax</fax>
+    <faxTransactions>$0.faxTransactions</faxTransactions>
+    <firstName>$0.firstName</firstName>
+    <firstVisit>$0.firstVisit</firstVisit>
+    <fxAccount>
+      <externalId>$0.externalId_10</externalId>
+      <internalId>$0.internalId_9</internalId>
+      <name>$0.name_9</name>
+      <type>$0.type_9</type>
+    </fxAccount>
+    <giveAccess>$0.giveAccess</giveAccess>
+    <globalSubscriptionStatus>$0.globalSubscriptionStatus</globalSubscriptionStatus>
+    <homePhone>$0.homePhone</homePhone>
+    <image>
+      <externalId>$0.externalId_11</externalId>
+      <internalId>$0.internalId_10</internalId>
+      <name>$0.name_10</name>
+      <type>$0.type_10</type>
+    </image>
+    <internalId>$0.internalId_11</internalId>
+    <isBudgetApproved>$0.isBudgetApproved</isBudgetApproved>
+    <isInactive>$0.isInactive</isInactive>
+    <isPerson>$0.isPerson</isPerson>
+    <keywords>$0.keywords</keywords>
+    <language>$0.language</language>
+    <lastModifiedDate>$0.lastModifiedDate</lastModifiedDate>
+    <lastName>$0.lastName</lastName>
+    <lastPageVisited>$0.lastPageVisited</lastPageVisited>
+    <lastVisit>$0.lastVisit</lastVisit>
+    <leadSource>
+      <externalId>$0.externalId_12</externalId>
+      <internalId>$0.internalId_12</internalId>
+      <name>$0.name_11</name>
+      <type>$0.type_11</type>
+    </leadSource>
+    <middleName>$0.middleName</middleName>
+    <mobilePhone>$0.mobilePhone</mobilePhone>
+    <negativeNumberFormat>$0.negativeNumberFormat</negativeNumberFormat>
+    <nullFieldList>
+      <clover:collection clover:name="name">$0.name_12</clover:collection>
+    </nullFieldList>
+    <numberFormat>$0.numberFormat</numberFormat>
+    <openingBalance>$0.openingBalance</openingBalance>
+    <openingBalanceAccount>
+      <externalId>$0.externalId_13</externalId>
+      <internalId>$0.internalId_13</internalId>
+      <name>$0.name_13</name>
+      <type>$0.type_12</type>
+    </openingBalanceAccount>
+    <openingBalanceDate>$0.openingBalanceDate</openingBalanceDate>
+    <overdueBalance>$0.overdueBalance</overdueBalance>
+    <overrideCurrencyFormat>$0.overrideCurrencyFormat</overrideCurrencyFormat>
+    <parent>
+      <externalId>$0.externalId_14</externalId>
+      <internalId>$0.internalId_14</internalId>
+      <name>$0.name_14</name>
+      <type>$0.type_13</type>
+    </parent>
+    <partner>
+      <externalId>$0.externalId_15</externalId>
+      <internalId>$0.internalId_15</internalId>
+      <name>$0.name_15</name>
+      <type>$0.type_14</type>
+    </partner>
+    <password>$0.password</password>
+    <password2>$0.password2</password2>
+    <phone>$0.phone</phone>
+    <phoneticName>$0.phoneticName</phoneticName>
+    <prefCCProcessor>
+      <externalId>$0.externalId_16</externalId>
+      <internalId>$0.internalId_16</internalId>
+      <name>$0.name_16</name>
+      <type>$0.type_15</type>
+    </prefCCProcessor>
+    <priceLevel>
+      <externalId>$0.externalId_17</externalId>
+      <internalId>$0.internalId_17</internalId>
+      <name>$0.name_17</name>
+      <type>$0.type_16</type>
+    </priceLevel>
+    <printOnCheckAs>$0.printOnCheckAs</printOnCheckAs>
+    <printTransactions>$0.printTransactions</printTransactions>
+    <receivablesAccount>
+      <externalId>$0.externalId_18</externalId>
+      <internalId>$0.internalId_18</internalId>
+      <name>$0.name_18</name>
+      <type>$0.type_17</type>
+    </receivablesAccount>
+    <referrer>$0.referrer</referrer>
+    <reminderDays>$0.reminderDays</reminderDays>
+    <representingSubsidiary>
+      <externalId>$0.externalId_19</externalId>
+      <internalId>$0.internalId_19</internalId>
+      <name>$0.name_19</name>
+      <type>$0.type_18</type>
+    </representingSubsidiary>
+    <requirePwdChange>$0.requirePwdChange</requirePwdChange>
+    <resaleNumber>$0.resaleNumber</resaleNumber>
+    <salesGroup>
+      <externalId>$0.externalId_20</externalId>
+      <internalId>$0.internalId_20</internalId>
+      <name>$0.name_20</name>
+      <type>$0.type_19</type>
+    </salesGroup>
+    <salesReadiness>
+      <externalId>$0.externalId_21</externalId>
+      <internalId>$0.internalId_21</internalId>
+      <name>$0.name_21</name>
+      <type>$0.type_20</type>
+    </salesReadiness>
+    <salesRep>
+      <externalId>$0.externalId_22</externalId>
+      <internalId>$0.internalId_22</internalId>
+      <name>$0.name_22</name>
+      <type>$0.type_21</type>
+    </salesRep>
+    <salutation>$0.salutation</salutation>
+    <sendEmail>$0.sendEmail</sendEmail>
+    <shipComplete>$0.shipComplete</shipComplete>
+    <shippingItem>
+      <externalId>$0.externalId_23</externalId>
+      <internalId>$0.internalId_23</internalId>
+      <name>$0.name_23</name>
+      <type>$0.type_22</type>
+    </shippingItem>
+    <stage>$0.stage</stage>
+    <startDate>$0.startDate</startDate>
+    <subsidiary>
+      <externalId>$0.externalId_24</externalId>
+      <internalId>$0.internalId_24</internalId>
+      <name>$0.name_24</name>
+      <type>$0.type_23</type>
+    </subsidiary>
+    <symbolPlacement>$0.symbolPlacement</symbolPlacement>
+    <syncPartnerTeams>$0.syncPartnerTeams</syncPartnerTeams>
+    <taxExempt>$0.taxExempt</taxExempt>
+    <taxItem>
+      <externalId>$0.externalId_25</externalId>
+      <internalId>$0.internalId_25</internalId>
+      <name>$0.name_25</name>
+      <type>$0.type_24</type>
+    </taxItem>
+    <taxable>$0.taxable</taxable>
+    <terms>
+      <externalId>$0.externalId_26</externalId>
+      <internalId>$0.internalId_26</internalId>
+      <name>$0.name_26</name>
+      <type>$0.type_25</type>
+    </terms>
+    <territory>
+      <externalId>$0.externalId_27</externalId>
+      <internalId>$0.internalId_27</internalId>
+      <name>$0.name_27</name>
+      <type>$0.type_26</type>
+    </territory>
+    <thirdPartyAcct>$0.thirdPartyAcct</thirdPartyAcct>
+    <thirdPartyCountry>$0.thirdPartyCountry</thirdPartyCountry>
+    <thirdPartyZipcode>$0.thirdPartyZipcode</thirdPartyZipcode>
+    <title>$0.title</title>
+    <unbilledOrders>$0.unbilledOrders</unbilledOrders>
+    <url>$0.url</url>
+    <vatRegNumber>$0.vatRegNumber</vatRegNumber>
+    <visits>$0.visits</visits>
+    <webLead>$0.webLead</webLead>
+  </item>
+</clover:collection>]]></attr>
+<attr name="_data_format"><![CDATA[JAVA]]></attr>
+<attr name="schema"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<schema-object>
+  <schema-collection>
+    <typed-object-ref type-ref="com.netsuite.webservices.lists.relationships_2013_1.Customer"/>
+  </schema-collection>
+  <typed-object type="com.netsuite.webservices.platform.common_2013_1.types.GlobalSubscriptionStatus"/>
+  <typed-object type="com.netsuite.webservices.lists.relationships_2013_1.types.CustomerNegativeNumberFormat"/>
+  <typed-object type="com.netsuite.webservices.lists.relationships_2013_1.CustomerAddressbookList">
+    <schema-collection name="addressbook" type="java.util.List">
+      <typed-object-ref type-ref="com.netsuite.webservices.lists.relationships_2013_1.CustomerAddressbook"/>
+    </schema-collection>
+  </typed-object>
+  <typed-object type="java.lang.Boolean"/>
+  <typed-object type="java.lang.Long"/>
+  <typed-object type="com.netsuite.webservices.platform.common_2013_1.Partners">
+    <typed-object-ref name="contribution" type-ref="java.lang.Double"/>
+    <typed-object-ref name="isPrimary" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="partner" type-ref="com.netsuite.webservices.platform.core_2013_1.RecordRef"/>
+    <typed-object-ref name="partnerRole" type-ref="com.netsuite.webservices.platform.core_2013_1.RecordRef"/>
+  </typed-object>
+  <typed-object type="com.netsuite.webservices.platform.common_2013_1.types.Language"/>
+  <typed-object type="com.netsuite.webservices.platform.core_2013_1.types.RecordType"/>
+  <typed-object type="com.netsuite.webservices.lists.relationships_2013_1.types.CustomerCreditHoldOverride"/>
+  <typed-object type="com.netsuite.webservices.platform.core_2013_1.RecordRef">
+    <typed-object-ref name="externalId" type-ref="java.lang.String"/>
+    <typed-object-ref name="internalId" type-ref="java.lang.String"/>
+    <typed-object-ref name="name" type-ref="java.lang.String"/>
+    <typed-object-ref name="type" type-ref="com.netsuite.webservices.platform.core_2013_1.types.RecordType"/>
+  </typed-object>
+  <typed-object type="com.netsuite.webservices.lists.relationships_2013_1.CustomerSalesTeam">
+    <typed-object-ref name="contribution" type-ref="java.lang.Double"/>
+    <typed-object-ref name="employee" type-ref="com.netsuite.webservices.platform.core_2013_1.RecordRef"/>
+    <typed-object-ref name="isPrimary" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="salesRole" type-ref="com.netsuite.webservices.platform.core_2013_1.RecordRef"/>
+  </typed-object>
+  <typed-object type="com.netsuite.webservices.platform.common_2013_1.types.Country"/>
+  <typed-object type="com.netsuite.webservices.lists.relationships_2013_1.Subscriptions">
+    <typed-object-ref name="lastModifiedDate" type-ref="javax.xml.datatype.XMLGregorianCalendar"/>
+    <typed-object-ref name="subscribed" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="subscription" type-ref="com.netsuite.webservices.platform.core_2013_1.RecordRef"/>
+  </typed-object>
+  <typed-object type="java.lang.Double"/>
+  <typed-object type="com.netsuite.webservices.lists.relationships_2013_1.CustomerDownload">
+    <typed-object-ref name="expiration" type-ref="javax.xml.datatype.XMLGregorianCalendar"/>
+    <typed-object-ref name="file" type-ref="com.netsuite.webservices.platform.core_2013_1.RecordRef"/>
+    <typed-object-ref name="licenseCode" type-ref="java.lang.String"/>
+    <typed-object-ref name="remainingDownloads" type-ref="java.lang.Long"/>
+  </typed-object>
+  <typed-object type="com.netsuite.webservices.lists.relationships_2013_1.CustomerCurrency">
+    <typed-object-ref name="balance" type-ref="java.lang.Double"/>
+    <typed-object-ref name="consolBalance" type-ref="java.lang.Double"/>
+    <typed-object-ref name="consolDepositBalance" type-ref="java.lang.Double"/>
+    <typed-object-ref name="consolOverdueBalance" type-ref="java.lang.Double"/>
+    <typed-object-ref name="consolUnbilledOrders" type-ref="java.lang.Double"/>
+    <typed-object-ref name="currency" type-ref="com.netsuite.webservices.platform.core_2013_1.RecordRef"/>
+    <typed-object-ref name="depositBalance" type-ref="java.lang.Double"/>
+    <typed-object-ref name="displaySymbol" type-ref="java.lang.String"/>
+    <typed-object-ref name="overdueBalance" type-ref="java.lang.Double"/>
+    <typed-object-ref name="overrideCurrencyFormat" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="symbolPlacement" type-ref="com.netsuite.webservices.platform.common_2013_1.types.CurrencySymbolPlacement"/>
+    <typed-object-ref name="unbilledOrders" type-ref="java.lang.Double"/>
+  </typed-object>
+  <typed-object type="com.netsuite.webservices.lists.relationships_2013_1.ContactAccessRoles">
+    <typed-object-ref name="contact" type-ref="com.netsuite.webservices.platform.core_2013_1.RecordRef"/>
+    <typed-object-ref name="email" type-ref="java.lang.String"/>
+    <typed-object-ref name="giveAccess" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="password" type-ref="java.lang.String"/>
+    <typed-object-ref name="password2" type-ref="java.lang.String"/>
+    <typed-object-ref name="role" type-ref="com.netsuite.webservices.platform.core_2013_1.RecordRef"/>
+    <typed-object-ref name="sendEmail" type-ref="java.lang.Boolean"/>
+  </typed-object>
+  <typed-object type="com.netsuite.webservices.lists.relationships_2013_1.ContactAccessRolesList">
+    <schema-collection name="contactRoles" type="java.util.List">
+      <typed-object-ref type-ref="com.netsuite.webservices.lists.relationships_2013_1.ContactAccessRoles"/>
+    </schema-collection>
+  </typed-object>
+  <typed-object type="com.netsuite.webservices.lists.relationships_2013_1.Customer">
+    <typed-object-ref name="accessRole" type-ref="com.netsuite.webservices.platform.core_2013_1.RecordRef"/>
+    <typed-object-ref name="accountNumber" type-ref="java.lang.String"/>
+    <typed-object-ref name="addressbookList" type-ref="com.netsuite.webservices.lists.relationships_2013_1.CustomerAddressbookList"/>
+    <typed-object-ref name="aging" type-ref="java.lang.Double"/>
+    <typed-object-ref name="altEmail" type-ref="java.lang.String"/>
+    <typed-object-ref name="altName" type-ref="java.lang.String"/>
+    <typed-object-ref name="altPhone" type-ref="java.lang.String"/>
+    <typed-object-ref name="balance" type-ref="java.lang.Double"/>
+    <typed-object-ref name="billPay" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="buyingReason" type-ref="com.netsuite.webservices.platform.core_2013_1.RecordRef"/>
+    <typed-object-ref name="buyingTimeFrame" type-ref="com.netsuite.webservices.platform.core_2013_1.RecordRef"/>
+    <typed-object-ref name="campaignCategory" type-ref="com.netsuite.webservices.platform.core_2013_1.RecordRef"/>
+    <typed-object-ref name="category" type-ref="com.netsuite.webservices.platform.core_2013_1.RecordRef"/>
+    <typed-object-ref name="clickStream" type-ref="java.lang.String"/>
+    <typed-object-ref name="comments" type-ref="java.lang.String"/>
+    <typed-object-ref name="companyName" type-ref="java.lang.String"/>
+    <typed-object-ref name="consolAging" type-ref="java.lang.Double"/>
+    <typed-object-ref name="consolBalance" type-ref="java.lang.Double"/>
+    <typed-object-ref name="consolDaysOverdue" type-ref="java.lang.Long"/>
+    <typed-object-ref name="consolDepositBalance" type-ref="java.lang.Double"/>
+    <typed-object-ref name="consolOverdueBalance" type-ref="java.lang.Double"/>
+    <typed-object-ref name="consolUnbilledOrders" type-ref="java.lang.Double"/>
+    <typed-object-ref name="contactRolesList" type-ref="com.netsuite.webservices.lists.relationships_2013_1.ContactAccessRolesList"/>
+    <typed-object-ref name="contribPct" type-ref="java.lang.String"/>
+    <typed-object-ref name="creditCardsList" type-ref="com.netsuite.webservices.lists.relationships_2013_1.CustomerCreditCardsList"/>
+    <typed-object-ref name="creditHoldOverride" type-ref="com.netsuite.webservices.lists.relationships_2013_1.types.CustomerCreditHoldOverride"/>
+    <typed-object-ref name="creditLimit" type-ref="java.lang.Double"/>
+    <typed-object-ref name="currency" type-ref="com.netsuite.webservices.platform.core_2013_1.RecordRef"/>
+    <typed-object-ref name="currencyList" type-ref="com.netsuite.webservices.lists.relationships_2013_1.CustomerCurrencyList"/>
+    <typed-object-ref name="customFieldList" type-ref="com.netsuite.webservices.platform.core_2013_1.CustomFieldList"/>
+    <typed-object-ref name="customForm" type-ref="com.netsuite.webservices.platform.core_2013_1.RecordRef"/>
+    <typed-object-ref name="dateCreated" type-ref="javax.xml.datatype.XMLGregorianCalendar"/>
+    <typed-object-ref name="daysOverdue" type-ref="java.lang.Long"/>
+    <typed-object-ref name="defaultAddress" type-ref="java.lang.String"/>
+    <typed-object-ref name="depositBalance" type-ref="java.lang.Double"/>
+    <typed-object-ref name="displaySymbol" type-ref="java.lang.String"/>
+    <typed-object-ref name="downloadList" type-ref="com.netsuite.webservices.lists.relationships_2013_1.CustomerDownloadList"/>
+    <typed-object-ref name="drAccount" type-ref="com.netsuite.webservices.platform.core_2013_1.RecordRef"/>
+    <typed-object-ref name="email" type-ref="java.lang.String"/>
+    <typed-object-ref name="emailPreference" type-ref="com.netsuite.webservices.lists.relationships_2013_1.types.EmailPreference"/>
+    <typed-object-ref name="emailTransactions" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="endDate" type-ref="javax.xml.datatype.XMLGregorianCalendar"/>
+    <typed-object-ref name="entityId" type-ref="java.lang.String"/>
+    <typed-object-ref name="entityStatus" type-ref="com.netsuite.webservices.platform.core_2013_1.RecordRef"/>
+    <typed-object-ref name="estimatedBudget" type-ref="java.lang.Double"/>
+    <typed-object-ref name="externalId" type-ref="java.lang.String"/>
+    <typed-object-ref name="fax" type-ref="java.lang.String"/>
+    <typed-object-ref name="faxTransactions" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="firstName" type-ref="java.lang.String"/>
+    <typed-object-ref name="firstVisit" type-ref="javax.xml.datatype.XMLGregorianCalendar"/>
+    <typed-object-ref name="fxAccount" type-ref="com.netsuite.webservices.platform.core_2013_1.RecordRef"/>
+    <typed-object-ref name="giveAccess" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="globalSubscriptionStatus" type-ref="com.netsuite.webservices.platform.common_2013_1.types.GlobalSubscriptionStatus"/>
+    <typed-object-ref name="groupPricingList" type-ref="com.netsuite.webservices.lists.relationships_2013_1.CustomerGroupPricingList"/>
+    <typed-object-ref name="homePhone" type-ref="java.lang.String"/>
+    <typed-object-ref name="image" type-ref="com.netsuite.webservices.platform.core_2013_1.RecordRef"/>
+    <typed-object-ref name="internalId" type-ref="java.lang.String"/>
+    <typed-object-ref name="isBudgetApproved" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="isInactive" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="isPerson" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="itemPricingList" type-ref="com.netsuite.webservices.lists.relationships_2013_1.CustomerItemPricingList"/>
+    <typed-object-ref name="keywords" type-ref="java.lang.String"/>
+    <typed-object-ref name="language" type-ref="com.netsuite.webservices.platform.common_2013_1.types.Language"/>
+    <typed-object-ref name="lastModifiedDate" type-ref="javax.xml.datatype.XMLGregorianCalendar"/>
+    <typed-object-ref name="lastName" type-ref="java.lang.String"/>
+    <typed-object-ref name="lastPageVisited" type-ref="java.lang.String"/>
+    <typed-object-ref name="lastVisit" type-ref="javax.xml.datatype.XMLGregorianCalendar"/>
+    <typed-object-ref name="leadSource" type-ref="com.netsuite.webservices.platform.core_2013_1.RecordRef"/>
+    <typed-object-ref name="middleName" type-ref="java.lang.String"/>
+    <typed-object-ref name="mobilePhone" type-ref="java.lang.String"/>
+    <typed-object-ref name="negativeNumberFormat" type-ref="com.netsuite.webservices.lists.relationships_2013_1.types.CustomerNegativeNumberFormat"/>
+    <typed-object-ref name="nullFieldList" type-ref="com.netsuite.webservices.platform.core_2013_1.NullField"/>
+    <typed-object-ref name="numberFormat" type-ref="com.netsuite.webservices.lists.relationships_2013_1.types.CustomerNumberFormat"/>
+    <typed-object-ref name="openingBalance" type-ref="java.lang.Double"/>
+    <typed-object-ref name="openingBalanceAccount" type-ref="com.netsuite.webservices.platform.core_2013_1.RecordRef"/>
+    <typed-object-ref name="openingBalanceDate" type-ref="javax.xml.datatype.XMLGregorianCalendar"/>
+    <typed-object-ref name="overdueBalance" type-ref="java.lang.Double"/>
+    <typed-object-ref name="overrideCurrencyFormat" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="parent" type-ref="com.netsuite.webservices.platform.core_2013_1.RecordRef"/>
+    <typed-object-ref name="partner" type-ref="com.netsuite.webservices.platform.core_2013_1.RecordRef"/>
+    <typed-object-ref name="partnersList" type-ref="com.netsuite.webservices.lists.relationships_2013_1.CustomerPartnersList"/>
+    <typed-object-ref name="password" type-ref="java.lang.String"/>
+    <typed-object-ref name="password2" type-ref="java.lang.String"/>
+    <typed-object-ref name="phone" type-ref="java.lang.String"/>
+    <typed-object-ref name="phoneticName" type-ref="java.lang.String"/>
+    <typed-object-ref name="prefCCProcessor" type-ref="com.netsuite.webservices.platform.core_2013_1.RecordRef"/>
+    <typed-object-ref name="priceLevel" type-ref="com.netsuite.webservices.platform.core_2013_1.RecordRef"/>
+    <typed-object-ref name="printOnCheckAs" type-ref="java.lang.String"/>
+    <typed-object-ref name="printTransactions" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="receivablesAccount" type-ref="com.netsuite.webservices.platform.core_2013_1.RecordRef"/>
+    <typed-object-ref name="referrer" type-ref="java.lang.String"/>
+    <typed-object-ref name="reminderDays" type-ref="java.lang.Long"/>
+    <typed-object-ref name="representingSubsidiary" type-ref="com.netsuite.webservices.platform.core_2013_1.RecordRef"/>
+    <typed-object-ref name="requirePwdChange" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="resaleNumber" type-ref="java.lang.String"/>
+    <typed-object-ref name="salesGroup" type-ref="com.netsuite.webservices.platform.core_2013_1.RecordRef"/>
+    <typed-object-ref name="salesReadiness" type-ref="com.netsuite.webservices.platform.core_2013_1.RecordRef"/>
+    <typed-object-ref name="salesRep" type-ref="com.netsuite.webservices.platform.core_2013_1.RecordRef"/>
+    <typed-object-ref name="salesTeamList" type-ref="com.netsuite.webservices.lists.relationships_2013_1.CustomerSalesTeamList"/>
+    <typed-object-ref name="salutation" type-ref="java.lang.String"/>
+    <typed-object-ref name="sendEmail" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="shipComplete" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="shippingItem" type-ref="com.netsuite.webservices.platform.core_2013_1.RecordRef"/>
+    <typed-object-ref name="stage" type-ref="com.netsuite.webservices.lists.relationships_2013_1.types.CustomerStage"/>
+    <typed-object-ref name="startDate" type-ref="javax.xml.datatype.XMLGregorianCalendar"/>
+    <typed-object-ref name="subscriptionsList" type-ref="com.netsuite.webservices.lists.relationships_2013_1.SubscriptionsList"/>
+    <typed-object-ref name="subsidiary" type-ref="com.netsuite.webservices.platform.core_2013_1.RecordRef"/>
+    <typed-object-ref name="symbolPlacement" type-ref="com.netsuite.webservices.platform.common_2013_1.types.CurrencySymbolPlacement"/>
+    <typed-object-ref name="syncPartnerTeams" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="taxExempt" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="taxItem" type-ref="com.netsuite.webservices.platform.core_2013_1.RecordRef"/>
+    <typed-object-ref name="taxable" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="terms" type-ref="com.netsuite.webservices.platform.core_2013_1.RecordRef"/>
+    <typed-object-ref name="territory" type-ref="com.netsuite.webservices.platform.core_2013_1.RecordRef"/>
+    <typed-object-ref name="thirdPartyAcct" type-ref="java.lang.String"/>
+    <typed-object-ref name="thirdPartyCountry" type-ref="com.netsuite.webservices.platform.common_2013_1.types.Country"/>
+    <typed-object-ref name="thirdPartyZipcode" type-ref="java.lang.String"/>
+    <typed-object-ref name="title" type-ref="java.lang.String"/>
+    <typed-object-ref name="unbilledOrders" type-ref="java.lang.Double"/>
+    <typed-object-ref name="url" type-ref="java.lang.String"/>
+    <typed-object-ref name="vatRegNumber" type-ref="java.lang.String"/>
+    <typed-object-ref name="visits" type-ref="java.lang.Long"/>
+    <typed-object-ref name="webLead" type-ref="java.lang.String"/>
+  </typed-object>
+  <typed-object type="com.netsuite.webservices.lists.relationships_2013_1.CustomerGroupPricingList">
+    <schema-collection name="groupPricing" type="java.util.List">
+      <typed-object-ref type-ref="com.netsuite.webservices.lists.relationships_2013_1.CustomerGroupPricing"/>
+    </schema-collection>
+  </typed-object>
+  <typed-object type="com.netsuite.webservices.lists.relationships_2013_1.types.CustomerNumberFormat"/>
+  <typed-object type="com.netsuite.webservices.lists.relationships_2013_1.CustomerGroupPricing">
+    <typed-object-ref name="group" type-ref="com.netsuite.webservices.platform.core_2013_1.RecordRef"/>
+    <typed-object-ref name="level" type-ref="com.netsuite.webservices.platform.core_2013_1.RecordRef"/>
+  </typed-object>
+  <typed-object type="com.netsuite.webservices.platform.common_2013_1.types.CurrencySymbolPlacement"/>
+  <typed-object type="com.netsuite.webservices.lists.relationships_2013_1.CustomerAddressbook">
+    <typed-object-ref name="addr1" type-ref="java.lang.String"/>
+    <typed-object-ref name="addr2" type-ref="java.lang.String"/>
+    <typed-object-ref name="addr3" type-ref="java.lang.String"/>
+    <typed-object-ref name="addrText" type-ref="java.lang.String"/>
+    <typed-object-ref name="addressee" type-ref="java.lang.String"/>
+    <typed-object-ref name="attention" type-ref="java.lang.String"/>
+    <typed-object-ref name="city" type-ref="java.lang.String"/>
+    <typed-object-ref name="country" type-ref="com.netsuite.webservices.platform.common_2013_1.types.Country"/>
+    <typed-object-ref name="defaultBilling" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="defaultShipping" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="internalId" type-ref="java.lang.String"/>
+    <typed-object-ref name="isResidential" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="label" type-ref="java.lang.String"/>
+    <typed-object-ref name="override" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="phone" type-ref="java.lang.String"/>
+    <typed-object-ref name="state" type-ref="java.lang.String"/>
+    <typed-object-ref name="zip" type-ref="java.lang.String"/>
+  </typed-object>
+  <typed-object type="com.netsuite.webservices.platform.core_2013_1.CustomFieldRef"/>
+  <typed-object type="javax.xml.datatype.XMLGregorianCalendar"/>
+  <typed-object type="com.netsuite.webservices.lists.relationships_2013_1.CustomerItemPricing">
+    <typed-object-ref name="currency" type-ref="com.netsuite.webservices.platform.core_2013_1.RecordRef"/>
+    <typed-object-ref name="item" type-ref="com.netsuite.webservices.platform.core_2013_1.RecordRef"/>
+    <typed-object-ref name="level" type-ref="com.netsuite.webservices.platform.core_2013_1.RecordRef"/>
+    <typed-object-ref name="price" type-ref="java.lang.Double"/>
+  </typed-object>
+  <typed-object type="com.netsuite.webservices.lists.relationships_2013_1.types.EmailPreference"/>
+  <typed-object type="java.lang.String"/>
+  <typed-object type="com.netsuite.webservices.lists.relationships_2013_1.CustomerPartnersList">
+    <schema-collection name="partners" type="java.util.List">
+      <typed-object-ref type-ref="com.netsuite.webservices.platform.common_2013_1.Partners"/>
+    </schema-collection>
+  </typed-object>
+  <typed-object type="com.netsuite.webservices.lists.relationships_2013_1.CustomerSalesTeamList">
+    <schema-collection name="salesTeam" type="java.util.List">
+      <typed-object-ref type-ref="com.netsuite.webservices.lists.relationships_2013_1.CustomerSalesTeam"/>
+    </schema-collection>
+  </typed-object>
+  <typed-object type="com.netsuite.webservices.lists.relationships_2013_1.types.CustomerStage"/>
+  <typed-object type="com.netsuite.webservices.lists.relationships_2013_1.CustomerCreditCardsList">
+    <schema-collection name="creditCards" type="java.util.List">
+      <typed-object-ref type-ref="com.netsuite.webservices.lists.relationships_2013_1.CustomerCreditCards"/>
+    </schema-collection>
+  </typed-object>
+  <typed-object type="com.netsuite.webservices.platform.core_2013_1.NullField">
+    <schema-collection name="name" type="java.util.List">
+      <typed-object-ref type-ref="java.lang.String"/>
+    </schema-collection>
+  </typed-object>
+  <typed-object type="com.netsuite.webservices.lists.relationships_2013_1.SubscriptionsList">
+    <schema-collection name="subscriptions" type="java.util.List">
+      <typed-object-ref type-ref="com.netsuite.webservices.lists.relationships_2013_1.Subscriptions"/>
+    </schema-collection>
+  </typed-object>
+  <typed-object type="com.netsuite.webservices.lists.relationships_2013_1.CustomerCreditCards">
+    <typed-object-ref name="ccDefault" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="ccExpireDate" type-ref="javax.xml.datatype.XMLGregorianCalendar"/>
+    <typed-object-ref name="ccMemo" type-ref="java.lang.String"/>
+    <typed-object-ref name="ccName" type-ref="java.lang.String"/>
+    <typed-object-ref name="ccNumber" type-ref="java.lang.String"/>
+    <typed-object-ref name="debitcardIssueNo" type-ref="java.lang.String"/>
+    <typed-object-ref name="internalId" type-ref="java.lang.String"/>
+    <typed-object-ref name="paymentMethod" type-ref="com.netsuite.webservices.platform.core_2013_1.RecordRef"/>
+    <typed-object-ref name="validfrom" type-ref="javax.xml.datatype.XMLGregorianCalendar"/>
+  </typed-object>
+  <typed-object type="com.netsuite.webservices.platform.core_2013_1.CustomFieldList">
+    <schema-collection name="customField" type="java.util.List">
+      <typed-object-ref type-ref="com.netsuite.webservices.platform.core_2013_1.CustomFieldRef"/>
+    </schema-collection>
+  </typed-object>
+  <typed-object type="com.netsuite.webservices.lists.relationships_2013_1.CustomerDownloadList">
+    <schema-collection name="download" type="java.util.List">
+      <typed-object-ref type-ref="com.netsuite.webservices.lists.relationships_2013_1.CustomerDownload"/>
+    </schema-collection>
+  </typed-object>
+  <typed-object type="com.netsuite.webservices.lists.relationships_2013_1.CustomerItemPricingList">
+    <schema-collection name="itemPricing" type="java.util.List">
+      <typed-object-ref type-ref="com.netsuite.webservices.lists.relationships_2013_1.CustomerItemPricing"/>
+    </schema-collection>
+  </typed-object>
+  <typed-object type="com.netsuite.webservices.lists.relationships_2013_1.CustomerCurrencyList">
+    <schema-collection name="currency" type="java.util.List">
+      <typed-object-ref type-ref="com.netsuite.webservices.lists.relationships_2013_1.CustomerCurrency"/>
+    </schema-collection>
+  </typed-object>
+</schema-object>
+]]></attr>
+</Node>
+<Node enabled="enabled" guiHeight="0" guiName="Foreach 'list' -&gt; 'list'" guiWidth="0" guiX="460" guiY="20" id="REFORMAT0" transformClass="com.mulesoft.datamapper.transform.MelRecordTransform" type="REFORMAT">
+<attr name="melScript"><![CDATA[//MEL
+//START -> DO NOT REMOVE
+output.__id = input.__id;
+//END -> DO NOT REMOVE
+output.email = input.email;
+output.firstName = input.firstname;
+output.lastName = input.lastname;
+output.middleName = input.middlename;
+output.name_12 = [input.lastname];
+output.isPerson = inputArguments.isPerson;]]></attr>
+</Node>
+<Edge debugMode="true" fromNode="BEAN_READER0:0" guiBendpoints="" id="Edge0" inPort="Port 0 (in)" metadata="bf991dfe-1155-4170-8c64-41b66c001d27" outPort="Port 0 (out)" toNode="REFORMAT0:0"/>
+<Edge debugMode="true" fromNode="REFORMAT0:0" guiBendpoints="" id="Edge1" inPort="Port 0 (in)" metadata="a04ca577-da10-476c-9f0a-73c8580b2fc6" outPort="Port 0 (out)" toNode="BEAN_WRITER0:0"/>
+</Phase>
+</Graph>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:data-mapper="http://www.mulesoft.org/schema/mule/ee/data-mapper" xmlns:json="http://www.mulesoft.org/schema/mule/json" xmlns:magento="http://www.mulesoft.org/schema/mule/magento" xmlns:netsuite="http://www.mulesoft.org/schema/mule/netsuite" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:spring="http://www.springframework.org/schema/beans" version="EE-3.4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/magento http://www.mulesoft.org/schema/mule/magento/1.1/mule-magento.xsd
+http://www.mulesoft.org/schema/mule/netsuite http://www.mulesoft.org/schema/mule/netsuite/3.0/mule-netsuite.xsd
+http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/json/current/mule-json.xsd
+http://www.mulesoft.org/schema/mule/ee/data-mapper http://www.mulesoft.org/schema/mule/ee/data-mapper/current/mule-data-mapper.xsd">
+	<magento:config name="Magento" username="mule" password="123456" address="http://localhost:8888/magento/index.php/api/V2_soap/index/" doc:name="Magento">
+        <magento:connection-pooling-profile initialisationPolicy="INITIALISE_ONE" exhaustedAction="WHEN_EXHAUSTED_GROW"/>
+    </magento:config>
+    <netsuite:config name="Netsuite" doc:name="Netsuite" account="${ns.account}" email="${ns.username}" password="${ns.password}" roleId="${ns.role}">
+        <netsuite:connection-pooling-profile initialisationPolicy="INITIALISE_ONE" exhaustedAction="WHEN_EXHAUSTED_GROW"/>
+    </netsuite:config>
+    <data-mapper:config name="yes_grf" transformationGraphPath="yes.grf" doc:name="DataMapper"/>
+    <flow name="upload.customers" doc:name="upload.customers">
+        <http:inbound-endpoint exchange-pattern="request-response" host="localhost" port="8081" doc:name="HTTP" path="mag-customers"/>
+        <magento:list-customers config-ref="Magento"   doc:name="Magento - List Customers"/>
+        <data-mapper:transform config-ref="yes_grf" doc:name="DataMapper">
+            <data-mapper:input-arguments>
+                <data-mapper:input-argument key="isPerson">#[true]</data-mapper:input-argument>
+            </data-mapper:input-arguments>
+        </data-mapper:transform>
+        <foreach doc:name="For Each">
+            <netsuite:add-record-objects config-ref="Netsuite" recordType="CUSTOMER" doc:name="Netsuite">
+                <netsuite:records>
+                    <netsuite:record value-ref="#[payload]"/>
+                </netsuite:records>
+            </netsuite:add-record-objects>
+            <logger message="DONE, DOING NEXT..." level="INFO" doc:name="Logger"/>
+        </foreach>
+        <json:object-to-json-transformer doc:name="Object to JSON"/>
+    </flow>
+    <flow name="find.customer" doc:name="find.customer">
+        <http:inbound-endpoint exchange-pattern="request-response" host="localhost" port="8081" path="mag-find-customer" doc:name="HTTP"/>
+        <logger message="EMAIL IS #[groovy:message.getInboundProperty('email')]" level="INFO" doc:name="Logger"/>
+        <netsuite:find-records config-ref="Netsuite" recordType="CUSTOMER" expression="email, 'is', 'tom'" doc:name="Netsuite - Find Customer"/>
+    </flow>
+</mule>
